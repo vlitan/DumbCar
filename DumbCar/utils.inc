@@ -7,13 +7,19 @@
 
  #ifndef _UTILS_INC_
  #define _UTILS_INC_
-.macro byte_to_reg ;  reg byte
+.macro byte_to_reg_l ;  reg byte
 	ldi r16, @1
 	out @0, r16
 .endmacro
 
-.macro set_byte ; reg index
-	ldi r16, @0
+.macro byte_to_reg_h ;  reg byte
+	ldi r16, @1
+	sts @0, r16
+.endmacro
+
+;TODO yet not working. HIGH / LOW Address issue
+.macro set_bit ; reg index
+	in r16, @0
 	sbr r16,  @1
 	out @0, r16
 .endmacro

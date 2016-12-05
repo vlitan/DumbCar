@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Mon Dec 05 12:31:13 2016
+AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Tue Dec 06 00:33:37 2016
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(9): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
@@ -7,16 +7,16 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(10): Includin
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(28): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(29): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(34): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(35): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(9): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(28): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(29): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(34): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(35): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
                                  
                                  ;
                                  
@@ -1060,13 +1060,19 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(29): Includin
                                  
                                   #ifndef _UTILS_INC_
                                   #define _UTILS_INC_
-                                 .macro byte_to_reg ;  reg byte
+                                 .macro byte_to_reg_l ;  reg byte
                                  	ldi r16, @1
                                  	out @0, r16
                                  .endmacro
                                  
-                                 .macro set_byte ; reg index
-                                 	ldi r16, @0
+                                 .macro byte_to_reg_h ;  reg byte
+                                 	ldi r16, @1
+                                 	sts @0, r16
+                                 .endmacro
+                                 
+                                 ;yet not working. abiguous stituation
+                                 .macro set_bit ; reg index
+                                 	in r16, @0
                                  	sbr r16,  @1
                                  	out @0, r16
                                  .endmacro
@@ -1137,40 +1143,69 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(29): Includin
                                   #ifndef _UTILS_INC_
                                   #endif
                                  
+                                  ;TODO enable disable via TCCRXY registers by COMXY1 bits
+                                 
                                   ;=====timer 0=====
                                   .macro init_timer_0
-                                 	byte_to_reg TCCR0A, (1 << WGM01) | (1 << WGM00)
-                                 	byte_to_reg TCCR0B, (1 << CS01)
+                                 	byte_to_reg_l TCCR0A, (1 << COM0B1) | (1 << COM0A1) | (1 << WGM01) | (1 << WGM00) ; fast pwm
+                                 	byte_to_reg_l TCCR0B, (1 << CS01)					; prescaler of 8
                                   .endmacro
                                   ;-----channel A---
                                   .macro enable_channel_0A
-                                 	set_byte TCCR0A, COM0A1
+                                  	sbi DDRD, PD6			; set pin as output
                                   .endmacro
                                  
                                   .macro disable_channel_0A
-                                 	cbi TCCR0A, COM0A1
+                                  	cbi DDRD, PD6			; set pin as input (disable aka output)
                                   .endmacro
                                  
                                   .macro set_match_0A
-                                 	byte_to_reg OCR0A, @0
+                                 	byte_to_reg_l OCR0A, @0
                                   .endmacro
                                   
                                   ;-----channel B---
                                   .macro enable_channel_0B
-                                 	set_byte TCCR0A, COM0B1
+                                 	 sbi DDRD, PD5			; set pin as output
                                   .endmacro
                                  
                                   .macro disable_channel_0B
-                                 	cbi TCCR0A, COM0B1
+                                 	cbi DDRD, PD5			; set pin as input (aka disable output)
                                   .endmacro
                                  
                                   .macro set_match_0B
-                                 	byte_to_reg OCR0B, @0
+                                 	byte_to_reg_l OCR0B, @0
                                   .endmacro
                                  
                                   ;=====timer 2=====
+                                 .macro init_timer_2
+                                 	byte_to_reg_h TCCR2A, (1 << COM2B1) | (1 << COM2A1) | (1 << WGM21) | (1 << WGM20) ; fast pwm
+                                 	byte_to_reg_h TCCR2B, (1 << CS21)					; prescaler of 8
+                                  .endmacro
                                   ;-----channel A---
+                                  .macro enable_channel_2A
+                                  	sbi DDRB, PB3			; set pin as output
+                                  .endmacro
+                                 
+                                  .macro disable_channel_2A
+                                  	cbi DDRB, PB3			; set pin as input (disable aka output)
+                                  .endmacro
+                                 
+                                  .macro set_match_2A
+                                 	byte_to_reg_h OCR2A, @0
+                                  .endmacro
+                                  
                                   ;-----channel B---
+                                  .macro enable_channel_2B
+                                 	 sbi DDRD, PD3			; set pin as output
+                                  .endmacro
+                                 
+                                  .macro disable_channel_2B
+                                 	cbi DDRD, PD3			; set pin as input (aka disable output)
+                                  .endmacro
+                                 
+                                  .macro set_match_2B
+                                 	byte_to_reg_h OCR2B, @0
+                                  .endmacro
                                   ;=================
                                   #endif
                                  ;======================
@@ -1178,24 +1213,31 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(29): Includin
                                  ; Replace with your application code
                                  start:
                                      ;-----setup--------
-000000 e003
+000000 ea03
 000001 bd04
 000002 e002
 000003 bd05                      	init_timer_0
-000004 e204
-000005 6007
-000006 bd04                      	enable_channel_0A
-000007 e204
-000008 6005
-000009 bd04                      	enable_channel_0B
-00000a e604
-00000b bd08                      	set_match_0B 100
-00000c ec08
-00000d bd07                      	set_match_0A 200
+000004 e005
+000005 bd07                      	set_match_0A 5
+000006 e00a
+000007 bd08                      	set_match_0B 10
+000008 9a56                      	enable_channel_0A
+000009 9a55                      	enable_channel_0B
+                                 	
+00000a ea03
+00000b 9300 00b0
+00000d e002
+00000e 9300 00b1                 	init_timer_2
+000010 ec08
+000011 9300 00b3                 	set_match_2A 200
+000013 e604
+000014 9300 00b4                 	set_match_2B 100
+000016 9a23                      	enable_channel_2A
+000017 9a53                      	enable_channel_2B
                                  	;------------------
                                  	inf:
                                  		;----infinite loop--
-00000e cfff                      	rjmp inf
+000018 cfff                      	rjmp inf
                                  
                                  ;====include methods===
                                  .include "utils.asm"
@@ -1242,7 +1284,7 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16:  14 r17:   0 r18:   0 r19:   0 r20:   0 
+r13:   0 r14:   0 r15:   0 r16:  16 r17:   0 r18:   0 r19:   0 r20:   0 
 r21:   0 r22:   0 r23:   0 r24:   0 r25:   0 r26:   0 r27:   0 r28:   0 
 r29:   0 r30:   0 r31:   0 
 Registers used: 1 out of 35 (2.9%)
@@ -1258,21 +1300,21 @@ clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   0 cls   :   0
 clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
 cpi   :   0 cpse  :   0 dec   :   0 eor   :   0 fmul  :   0 fmuls :   0 
 fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   0 jmp   :   0 
-ld    :   0 ldd   :   0 ldi   :   6 lds   :   0 lpm   :   0 lsl   :   0 
+ld    :   0 ldd   :   0 ldi   :   8 lds   :   0 lpm   :   0 lsl   :   0 
 lsr   :   0 mov   :   0 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   0 or    :   0 ori   :   0 out   :   6 pop   :   0 
+neg   :   0 nop   :   0 or    :   0 ori   :   0 out   :   4 pop   :   0 
 push  :   0 rcall :   0 ret   :   0 reti  :   0 rjmp  :   1 rol   :   0 
-ror   :   0 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 
-sbiw  :   0 sbr   :   2 sbrc  :   0 sbrs  :   0 sec   :   0 seh   :   0 
+ror   :   0 sbc   :   0 sbci  :   0 sbi   :   4 sbic  :   0 sbis  :   0 
+sbiw  :   0 sbr   :   0 sbrc  :   0 sbrs  :   0 sec   :   0 seh   :   0 
 sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
-sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   0 
+sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   4 
 sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 4 out of 113 (3.5%)
+Instructions used: 5 out of 113 (4.4%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x00001e     30      0     30   32768   0.1%
+[.cseg] 0x000000 0x000032     50      0     50   32768   0.2%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 

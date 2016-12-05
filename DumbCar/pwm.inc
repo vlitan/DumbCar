@@ -11,39 +11,68 @@
  .include "m328Pdef.inc"
  .include "utils.inc"
 
+ ;TODO enable disable via TCCRXY registers by COMXY1 bits
+
  ;=====timer 0=====
  .macro init_timer_0
-	byte_to_reg TCCR0A, (1 << WGM01) | (1 << WGM00)
-	byte_to_reg TCCR0B, (1 << CS01)
+	byte_to_reg_l TCCR0A, (1 << COM0B1) | (1 << COM0A1) | (1 << WGM01) | (1 << WGM00) ; fast pwm
+	byte_to_reg_l TCCR0B, (1 << CS01)					; prescaler of 8
  .endmacro
  ;-----channel A---
  .macro enable_channel_0A
-	set_byte TCCR0A, COM0A1
+ 	sbi DDRD, PD6			; set pin as output
  .endmacro
 
  .macro disable_channel_0A
-	cbi TCCR0A, COM0A1
+ 	cbi DDRD, PD6			; set pin as input (disable aka output)
  .endmacro
 
  .macro set_match_0A
-	byte_to_reg OCR0A, @0
+	byte_to_reg_l OCR0A, @0
  .endmacro
  
  ;-----channel B---
  .macro enable_channel_0B
-	set_byte TCCR0A, COM0B1
+	 sbi DDRD, PD5			; set pin as output
  .endmacro
 
  .macro disable_channel_0B
-	cbi TCCR0A, COM0B1
+	cbi DDRD, PD5			; set pin as input (aka disable output)
  .endmacro
 
  .macro set_match_0B
-	byte_to_reg OCR0B, @0
+	byte_to_reg_l OCR0B, @0
  .endmacro
 
  ;=====timer 2=====
+.macro init_timer_2
+	byte_to_reg_h TCCR2A, (1 << COM2B1) | (1 << COM2A1) | (1 << WGM21) | (1 << WGM20) ; fast pwm
+	byte_to_reg_h TCCR2B, (1 << CS21)					; prescaler of 8
+ .endmacro
  ;-----channel A---
+ .macro enable_channel_2A
+ 	sbi DDRB, PB3			; set pin as output
+ .endmacro
+
+ .macro disable_channel_2A
+ 	cbi DDRB, PB3			; set pin as input (disable aka output)
+ .endmacro
+
+ .macro set_match_2A
+	byte_to_reg_h OCR2A, @0
+ .endmacro
+ 
  ;-----channel B---
+ .macro enable_channel_2B
+	 sbi DDRD, PD3			; set pin as output
+ .endmacro
+
+ .macro disable_channel_2B
+	cbi DDRD, PD3			; set pin as input (aka disable output)
+ .endmacro
+
+ .macro set_match_2B
+	byte_to_reg_h OCR2B, @0
+ .endmacro
  ;=================
  #endif

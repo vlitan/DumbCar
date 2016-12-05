@@ -15,10 +15,16 @@
 start:
     ;-----setup--------
 	init_timer_0
+	set_match_0A 5
+	set_match_0B 10
 	enable_channel_0A
 	enable_channel_0B
-	set_match_0B 100
-	set_match_0A 200
+	
+	init_timer_2
+	set_match_2A 200
+	set_match_2B 100
+	enable_channel_2A
+	enable_channel_2B
 	;------------------
 	inf:
 		;----infinite loop--
