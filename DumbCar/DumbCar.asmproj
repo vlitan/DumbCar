@@ -67,6 +67,18 @@
     <Compile Include="main.asm">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="pwm.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pwm.inc">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utils.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utils.inc">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Assembler.targets" />
 </Project>
