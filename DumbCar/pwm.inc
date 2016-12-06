@@ -15,8 +15,8 @@
 
  ;=====timer 0=====
  .macro init_timer_0
-	byte_to_reg_l TCCR0A, (1 << COM0B1) | (1 << COM0A1) | (1 << WGM01) | (1 << WGM00) ; fast pwm
-	byte_to_reg_l TCCR0B, (1 << CS01)					; prescaler of 8
+	cb_to_reg_l TCCR0A, (1 << COM0B1) | (1 << COM0A1) | (1 << WGM01) | (1 << WGM00) ; fast pwm
+	cb_to_reg_l TCCR0B, (1 << CS01)					; prescaler of 8
  .endmacro
  ;-----channel A---
  .macro enable_channel_0A
@@ -27,8 +27,12 @@
  	cbi DDRD, PD6			; set pin as input (disable aka output)
  .endmacro
 
- .macro set_match_0A
-	byte_to_reg_l OCR0A, @0
+ .macro set_cmatch_0A
+	cb_to_reg_l OCR0A, @0
+ .endmacro
+
+  .macro set_match_0A
+	out OCR0A, @0
  .endmacro
  
  ;-----channel B---
@@ -40,14 +44,17 @@
 	cbi DDRD, PD5			; set pin as input (aka disable output)
  .endmacro
 
- .macro set_match_0B
-	byte_to_reg_l OCR0B, @0
+ .macro set_cmatch_0B
+	cb_to_reg_l OCR0B, @0
  .endmacro
 
+ .macro set_match_0B
+	out OCR0B, @0
+ .endmacro
  ;=====timer 2=====
 .macro init_timer_2
-	byte_to_reg_h TCCR2A, (1 << COM2B1) | (1 << COM2A1) | (1 << WGM21) | (1 << WGM20) ; fast pwm
-	byte_to_reg_h TCCR2B, (1 << CS21)					; prescaler of 8
+	cb_to_reg_h TCCR2A, (1 << COM2B1) | (1 << COM2A1) | (1 << WGM21) | (1 << WGM20) ; fast pwm
+	cb_to_reg_h TCCR2B, (1 << CS21)					; prescaler of 8
  .endmacro
  ;-----channel A---
  .macro enable_channel_2A
@@ -58,8 +65,13 @@
  	cbi DDRB, PB3			; set pin as input (disable aka output)
  .endmacro
 
+ .macro set_cmatch_2A
+	cb_to_reg_h OCR2A, @0
+ .endmacro
+
+ 
  .macro set_match_2A
-	byte_to_reg_h OCR2A, @0
+	sts OCR2A, @0
  .endmacro
  
  ;-----channel B---
@@ -71,8 +83,12 @@
 	cbi DDRD, PD3			; set pin as input (aka disable output)
  .endmacro
 
- .macro set_match_2B
-	byte_to_reg_h OCR2B, @0
+ .macro set_cmatch_2B
+	cb_to_reg_h OCR2B, @0
+ .endmacro
+
+  .macro set_match_2B
+	sts OCR2B, @0
  .endmacro
  ;=================
  #endif

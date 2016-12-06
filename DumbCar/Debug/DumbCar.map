@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Tue Dec 06 00:33:37 2016
+AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Tue Dec 06 11:49:21 2016
 
 
 EQU  SIGNATURE_000 0000001e
@@ -695,5 +695,11 @@ EQU  ACIaddr      0000002e
 EQU  TWIaddr      00000030
 EQU  SPMRaddr     00000032
 EQU  INT_VECTORS_SIZE 00000034
+DEF  A            r26
+DEF  B            r27
+DEF  C            r28
+DEF  D            r29
 CSEG start        00000000
-CSEG inf          00000018
+CSEG inf          00000012
+CSEG delay_half_sec 0000001f
+CSEG L1           00000022
