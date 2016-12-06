@@ -54,7 +54,7 @@
  ;=====timer 2=====
 .macro init_timer_2
 	cb_to_reg_h TCCR2A, (1 << COM2B1) | (1 << COM2A1) | (1 << WGM21) | (1 << WGM20) ; fast pwm
-	cb_to_reg_h TCCR2B, (1 << CS21)					; prescaler of 8
+	cb_to_reg_h TCCR2B, (1 << CS21)				; prescaler of 8
  .endmacro
  ;-----channel A---
  .macro enable_channel_2A

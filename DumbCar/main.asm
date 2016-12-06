@@ -5,45 +5,32 @@
 ; Author : virgil
 ;
 
+.org $00
+
 ;=====includes=========
 .include "m328Pdef.inc"
 .include "utils.inc"
-.include "pwm.inc"
+.include "motors.inc"
 ;======defines=========
-.def A=r26
-.def B=r27
-.def C=r28
-.def D=r29
 
+.cseg
 ; Replace with your application code
 start:
     ;-----setup--------
-	init_timer_0
-	enable_channel_0A
-	enable_channel_0B
-	
-	init_timer_2
-	enable_channel_2A
-	enable_channel_2B
-
-	ldi A, 0
-	ldi B, 70
-	ldi C, 130
-	ldi D, 190
+	init_motors
+	init_stack
 	;------------------
+	ldi SL, 1
+	ldi VL, 0
+	ldi r17, 10
 	inf:
-		inc A
-		inc B
-		inc C
-		inc D
-		set_match_0A A
-		set_match_0B B
-		set_match_2A C
-		set_match_2B D
-		CALL delay_half_sec ; mult mai putin acum!
+		add VL, r17
+		go
+		CALL delay_ms
 	rjmp inf
 
 ;====include methods===
 .include "utils.asm"
 .include "pwm.asm"
+.include "motors.asm"
 ;======================
