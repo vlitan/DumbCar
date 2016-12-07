@@ -33,7 +33,7 @@ ret
 	els: ; else if SR == 1 (backwards)
 		disable_channel_0A
 		enable_channel_0B
-		set_match_2B VR
+		set_match_0B VR
 	en:
 ret
 
