@@ -11,6 +11,7 @@
 .include "m328Pdef.inc"
 .include "utils.inc"
 .include "motors.inc"
+.include "encoders.inc"
 ;======defines=========
 
 .cseg
@@ -19,18 +20,28 @@ start:
     ;-----setup--------
 	init_motors
 	init_stack
+	init_encoders
 	;------------------
-	ldi SL, 1
+	ldi SL, 0
 	ldi VL, 0
-	ldi r17, 10
+	ldi r18, 1
 	inf:
-		add VL, r17
-		go
-		CALL delay_ms
+		ldi r17, 1
+		in r19, PIND
+		and r17, r19
+		cp r17, r18
+		breq else
+			ldi VL, 200
+		rjmp end
+		else:
+			ldi VL, 0
+		end:
+			go
 	rjmp inf
 
 ;====include methods===
 .include "utils.asm"
 .include "pwm.asm"
 .include "motors.asm"
+.include "encoders.asm"
 ;======================

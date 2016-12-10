@@ -64,6 +64,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="encoders.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="encoders.inc">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="main.asm">
       <SubType>Code</SubType>
     </Compile>

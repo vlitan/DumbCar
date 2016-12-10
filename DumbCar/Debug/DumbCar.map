@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Tue Dec 06 23:55:33 2016
+AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Sat Dec 10 19:09:00 2016
 
 
 EQU  SIGNATURE_000 0000001e
@@ -700,12 +700,14 @@ DEF  VL           r27
 DEF  SR           r28
 DEF  VR           r29
 CSEG start        00000000
-CSEG inf          00000011
-CSEG go_left      00000023
-CSEG go_right     00000030
-CSEG delay_ms     00000019
-CSEG L1           0000001c
-CSEG else         0000002b
-CSEG end          0000002f
-CSEG els          00000037
-CSEG en           0000003b
+CSEG inf          00000015
+CSEG else         0000001c
+CSEG end          0000001d
+CSEG go_left      0000002c
+CSEG go_right     00000039
+CSEG delay_ms     00000022
+CSEG L1           00000025
+CSEG else1        00000034
+CSEG end1         00000038
+CSEG else2        00000040
+CSEG end2         00000043
