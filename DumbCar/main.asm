@@ -12,6 +12,7 @@
 .include "utils.inc"
 .include "motors.inc"
 .include "encoders.inc"
+.include "analog_input.inc"
 ;======defines=========
 
 .cseg
@@ -21,22 +22,15 @@ start:
 	init_motors
 	init_stack
 	init_encoders
+	init_adc
 	;------------------
 	ldi SL, 0
 	ldi VL, 0
-	ldi r18, 1
 	inf:
-		ldi r17, 1
-		in r19, PIND
-		and r17, r19
-		cp r17, r18
-		breq else
-			ldi VL, 255
-		rjmp end
-		else:
-			ldi VL, 0
-		end:
+		analog_read
+		mov VL, DS
 		go
+		CALL delay_ms
 	rjmp inf
 
 ;====include methods===
@@ -44,4 +38,5 @@ start:
 .include "pwm.asm"
 .include "motors.asm"
 .include "encoders.asm"
+.include "analog_input.asm"
 ;======================

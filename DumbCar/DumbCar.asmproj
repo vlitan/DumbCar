@@ -64,6 +64,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="analog_input.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="analog_input.inc">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="encoders.asm">
       <SubType>Code</SubType>
     </Compile>
