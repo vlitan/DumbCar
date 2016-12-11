@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Sat Dec 10 19:09:00 2016
+AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Sun Dec 11 17:54:06 2016
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
@@ -1175,7 +1175,7 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(46): Includin
                                  
                                   ;=====timer 0=====
                                   .macro init_timer_0
-                                 	cb_to_reg_l TCCR0A, (1 << COM0B1) | (1 << COM0A1) | (1 << WGM01) | (1 << WGM00) ; fast pwm
+                                 	cb_to_reg_l TCCR0A, (1 << COM0B1) | (1 << COM0A1) | (1 << WGM02) | (1 << WGM00) ; phase corrected pwm
                                  	cb_to_reg_l TCCR0B, (1 << CS01)					; prescaler of 8
                                   .endmacro
                                   ;-----channel A---
@@ -1213,7 +1213,7 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(46): Includin
                                   .endmacro
                                   ;=====timer 2=====
                                  .macro init_timer_2
-                                 	cb_to_reg_h TCCR2A, (1 << COM2B1) | (1 << COM2A1) | (1 << WGM21) | (1 << WGM20) ; fast pwm
+                                 	cb_to_reg_h TCCR2A, (1 << COM2B1) | (1 << COM2A1) | (1 << WGM22) | (1 << WGM20) ; phase corrected pwm
                                  	cb_to_reg_h TCCR2B, (1 << CS21)				; prescaler of 8
                                   .endmacro
                                   ;-----channel A---
@@ -1292,11 +1292,11 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(46): Includin
                                  ; Replace with your application code
                                  start:
                                      ;-----setup--------
-000000 ea23
+000000 ea29
 000001 bd24
 000002 e022
 000003 bd25
-000004 ea23
+000004 ea29
 000005 9320 00b0
 000007 e022
 000008 9320 00b1                 	init_motors
@@ -1318,13 +1318,13 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(46): Includin
 000017 2313                      		and r17, r19
 000018 1712                      		cp r17, r18
 000019 f011                      		breq else
-00001a ecb8                      			ldi VL, 200
+00001a efbf                      			ldi VL, 255
 00001b c001                      		rjmp end
                                  		else:
 00001c e0b0                      			ldi VL, 0
                                  		end:
 00001d 940e 002c
-00001f 940e 0039                 			go
+00001f 940e 0039                 		go
 000021 cff3                      	rjmp inf
                                  
                                  ;====include methods===

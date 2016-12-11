@@ -15,7 +15,7 @@
 
  ;=====timer 0=====
  .macro init_timer_0
-	cb_to_reg_l TCCR0A, (1 << COM0B1) | (1 << COM0A1) | (1 << WGM01) | (1 << WGM00) ; fast pwm
+	cb_to_reg_l TCCR0A, (1 << COM0B1) | (1 << COM0A1) | (1 << WGM02) | (1 << WGM00) ; phase corrected pwm
 	cb_to_reg_l TCCR0B, (1 << CS01)					; prescaler of 8
  .endmacro
  ;-----channel A---
@@ -53,7 +53,7 @@
  .endmacro
  ;=====timer 2=====
 .macro init_timer_2
-	cb_to_reg_h TCCR2A, (1 << COM2B1) | (1 << COM2A1) | (1 << WGM21) | (1 << WGM20) ; fast pwm
+	cb_to_reg_h TCCR2A, (1 << COM2B1) | (1 << COM2A1) | (1 << WGM22) | (1 << WGM20) ; phase corrected pwm
 	cb_to_reg_h TCCR2B, (1 << CS21)				; prescaler of 8
  .endmacro
  ;-----channel A---

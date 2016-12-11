@@ -31,12 +31,12 @@ start:
 		and r17, r19
 		cp r17, r18
 		breq else
-			ldi VL, 200
+			ldi VL, 255
 		rjmp end
 		else:
 			ldi VL, 0
 		end:
-			go
+		go
 	rjmp inf
 
 ;====include methods===
