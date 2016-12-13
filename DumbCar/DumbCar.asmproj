@@ -79,6 +79,12 @@
     <Compile Include="main.asm">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="misc.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="misc.inc">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="motors.asm">
       <SubType>Code</SubType>
     </Compile>

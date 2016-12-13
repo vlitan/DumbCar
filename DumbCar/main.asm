@@ -13,6 +13,7 @@
 .include "motors.inc"
 .include "encoders.inc"
 .include "analog_input.inc"
+.include "misc.inc"
 ;======defines=========
 
 .cseg ;code segment
@@ -23,13 +24,11 @@ start:
 	init_stack
 	init_encoders
 	init_adc
+	init_led
 	;------------------
-	ldi SL, 0
-	ldi VL, 0
 	inf:
-		analog_read
-		mov VL, DS
-		go
+		toggle_led
+		CALL delay_ms
 	rjmp inf
 
 ;====include methods===
@@ -38,4 +37,5 @@ start:
 .include "motors.asm"
 .include "encoders.asm"
 .include "analog_input.asm"
+.include "misc.asm"
 ;======================

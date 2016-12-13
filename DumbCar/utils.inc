@@ -35,11 +35,30 @@
 .endmacro
 
 .macro clear_bit_h
-;TODO
+	lds r16, @0
+	andi r16, ~(1 << @1)
+	sts @0, r16
 .endmacro
 
 .macro clear_bit_l
-;TODO
+	in r16, @0
+	andi r16, ~(1 << @1)
+	out @0, r16
+.endmacro
+
+.macro toggle_bit_h
+	lds r16, @0
+	eor r16, (1 << @1)
+	sts @0, r16
+.endmacro
+
+.macro toggle_bit_l ;TODO r17 used here
+	in r16, @0
+	push r17
+	ldi r17, (1 << @1)
+	eor r16, r17
+	pop r17
+	out @0, r16
 .endmacro
 
 

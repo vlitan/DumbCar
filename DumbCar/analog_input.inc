@@ -7,6 +7,8 @@
  #ifndef _ANLOG_INPUT_INC_
  #define _ANALOG_INPUT_INC_
 
+ .include "utils.inc"
+
  .def DS = r25
 
  .macro init_adc

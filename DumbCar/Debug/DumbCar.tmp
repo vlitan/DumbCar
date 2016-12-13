@@ -16,11 +16,13 @@
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc</FILE>
+  <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm</FILE>
+  <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\Debug\DumbCar.obj</FILE>
@@ -33,14 +35,14 @@
   <FILE>DumbCar.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <start><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>20</LINE></start>
+  <start><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>21</LINE></start>
   <inf><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>29</LINE></inf>
-  <go_left><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>10</LINE></go_left>
-  <go_right><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>25</LINE></go_right>
   <delay_ms><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE><LINE>11</LINE></delay_ms>
   <L1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE><LINE>15</LINE></L1>
+  <go_left><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>10</LINE></go_left>
   <else1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>18</LINE></else1>
   <end1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>22</LINE></end1>
+  <go_right><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>25</LINE></go_right>
   <else2><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>33</LINE></else2>
   <end2><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>37</LINE></end2>
  </LABELS>
