@@ -15,8 +15,8 @@
 .include "analog_input.inc"
 ;======defines=========
 
-.cseg
-; Replace with your application code
+.cseg ;code segment
+
 start:
     ;-----setup--------
 	init_motors
@@ -30,7 +30,6 @@ start:
 		analog_read
 		mov VL, DS
 		go
-		CALL delay_ms
 	rjmp inf
 
 ;====include methods===

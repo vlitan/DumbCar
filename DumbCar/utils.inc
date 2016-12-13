@@ -22,5 +22,25 @@
 	cb_to_reg_l SPH, high(RAMEND)
 .endmacro
 
+.macro set_bit_h
+	lds r16, @0
+	ori r16, (1 << @1)
+	sts @0, r16
+.endmacro
+
+.macro set_bit_l
+	in r16, @0
+	ori r16, (1 << @1)
+	out @0, r16
+.endmacro
+
+.macro clear_bit_h
+;TODO
+.endmacro
+
+.macro clear_bit_l
+;TODO
+.endmacro
+
 
  #endif
