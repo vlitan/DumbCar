@@ -5,7 +5,7 @@
 ; Author : virgil
 ;
 
-.org $00
+
 
 ;=====includes=========
 .include "m328Pdef.inc"
@@ -14,9 +14,14 @@
 .include "encoders.inc"
 .include "analog_input.inc"
 .include "misc.inc"
+.include "timing.inc"
 ;======defines=========
+.org 0x0000
+rjmp start ; reset ISR
+.org 0x0016 ;Timer/Counter1 Capture Event
+rjmp tim1_compa
 
-.cseg ;code segment
+
 
 start:
     ;-----setup--------
@@ -25,12 +30,17 @@ start:
 	init_encoders
 	init_adc
 	init_led
+	init_timer
+	sei
 	;------------------
 	inf:
-		toggle_led
-		CALL delay_ms
+		;toggle_led
+		;CALL delay_ms
 	rjmp inf
 
+tim1_compa:
+	 toggle_led
+	reti
 ;====include methods===
 .include "utils.asm"
 .include "pwm.asm"

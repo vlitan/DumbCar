@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Tue Dec 13 23:28:54 2016
+AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Sun Dec 25 22:40:08 2016
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
@@ -21,12 +21,13 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(15): Includin
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(16): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(35): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(36): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(37): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(38): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(39): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(40): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(17): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\timing.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(45): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(46): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(47): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(48): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(49): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(50): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
@@ -39,12 +40,13 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(15): Includin
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(16): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(35): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(36): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(37): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(38): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(39): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(40): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(17): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\timing.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(45): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(46): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(47): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(48): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(49): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(50): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
                                  
                                  ;
                                  
@@ -1033,7 +1035,7 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(40): Includin
                                  ; Author : virgil
                                  ;
                                  
-                                 .org $00
+                                 
                                  
                                  ;=====includes=========
                                  .include "m328Pdef.inc"
@@ -1414,44 +1416,81 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(40): Includin
                                   .endmacro
                                  
                                   #endif
-                                 ;======defines=========
+                                 .include "timing.inc"
                                  
-                                 .cseg ;code segment
+                                  * timing.inc
+                                  *
+                                  *  Created: 12/18/2016 3:49:36 PM
+                                  *   Author: virgil
+                                  */ 
+                                 
+                                  #ifndef _TIMING_INC_
+                                  #define _TIMING_INC_
+                                  
+                                  .def MS = r20
+                                  
+                                  .macro init_timer
+                                 	cb_to_reg_h TCCR1B,(1 << WGM12)|(1<<CS11)|(1<<CS10); timer clock = system clock/64
+                                 	cb_to_reg_h OCR1AH, 0xff
+                                 	cb_to_reg_h OCR1AL, 0xff
+                                 	cb_to_reg_h TIMSK1, 1<<OCIE1A; 
+                                  .endmacro
+                                 
+                                  #endif
+                                 ;======defines=========
+                                 .org 0x0000
+000000 c016                      rjmp start ; reset ISR
+                                 .org 0x0016 ;Timer/Counter1 Capture Event
+000016 c027                      rjmp tim1_compa
+                                 
+                                 
                                  
                                  start:
                                      ;-----setup--------
-000000 ea09
-000001 bd04
-000002 e002
-000003 bd05
-000004 ea09
-000005 9300 00b0
-000007 e002
-000008 9300 00b1                 	init_motors
-00000a ef0f
-00000b bf0d
-00000c e008
-00000d bf0e                      	init_stack
-00000e 9850
-00000f 9851
-000010 9a58
-000011 9a59                      	init_encoders
-000012 e600
-000013 9300 007c
-000015 e805
-000016 9300 007a                 	init_adc
-000018 9a52                      	init_led
+000017 ea09
+000018 bd04
+000019 e002
+00001a bd05
+00001b ea09
+00001c 9300 00b0
+00001e e002
+00001f 9300 00b1                 	init_motors
+000021 ef0f
+000022 bf0d
+000023 e008
+000024 bf0e                      	init_stack
+000025 9850
+000026 9851
+000027 9a58
+000028 9a59                      	init_encoders
+000029 e600
+00002a 9300 007c
+00002c e805
+00002d 9300 007a                 	init_adc
+00002f 9a52                      	init_led
+000030 e00b
+000031 9300 0081
+000033 ef0f
+000034 9300 0089
+000036 ef0f
+000037 9300 0088
+000039 e002
+00003a 9300 006f                 	init_timer
+00003c 9478                      	sei
                                  	;------------------
                                  	inf:
-000019 b10b
-00001a 931f
-00001b e014
-00001c 2701
-00001d 911f
-00001e b90b                      		toggle_led
-00001f 940e 0022                 		CALL delay_ms
-000021 cff7                      	rjmp inf
+                                 		;toggle_led
+                                 		;CALL delay_ms
+00003d cfff                      	rjmp inf
                                  
+                                 tim1_compa:
+00003e b10b
+00003f 931f
+000040 e014
+000041 2701
+000042 911f
+000043 b90b                      	 toggle_led
+000044 9518                      	reti
                                  ;====include methods===
                                  .include "utils.asm"
                                  
@@ -1465,16 +1504,16 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(40): Includin
                                   #define _UTILS_ASM_
                                  
                                  delay_ms: ;should be 1ms (clock @ 16MHz)
-000022 e031                      	ldi  r19, 1
-000023 e02c                          ldi  r18, 12
-000024 e840                          ldi  r20, 128
-000025 954a                      L1: dec  r20
-000026 f7f1                          brne L1
-000027 953a                          dec  r19
-000028 f7e1                          brne L1
-000029 952a                          dec  r18
-00002a f7d1                          brne L1
-00002b 9508                      ret
+000045 e031                      	ldi  r19, 1
+000046 e02c                          ldi  r18, 12
+000047 e840                          ldi  r20, 128
+000048 954a                      L1: dec  r20
+000049 f7f1                          brne L1
+00004a 953a                          dec  r19
+00004b f7e1                          brne L1
+00004c 952a                          dec  r18
+00004d f7d1                          brne L1
+00004e 9508                      ret
                                  
                                   #endif
                                  
@@ -1501,34 +1540,34 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(40): Includin
                                   #define _MOTORS_ASM_
                                  
                                   go_left:
-00002c e000                      	ldi r16, 0
-00002d 17a0                      	cp SL, r16
-00002e f029                      	breq else1 ;if SL != 1 (forward)
-00002f 9853                      			disable_channel_2B
-000030 9a23                      			enable_channel_2A
-000031 93b0 00b3                 			set_match_2A VL
-000033 c004                      	rjmp end1
+00004f e000                      	ldi r16, 0
+000050 17a0                      	cp SL, r16
+000051 f029                      	breq else1 ;if SL != 1 (forward)
+000052 9853                      			disable_channel_2B
+000053 9a23                      			enable_channel_2A
+000054 93b0 00b3                 			set_match_2A VL
+000056 c004                      	rjmp end1
                                  	else1: ; else if SL == 1 (backwards)
-000034 9823                      		disable_channel_2A
-000035 9a53                      		enable_channel_2B
-000036 93b0 00b4                 		set_match_2B VL
+000057 9823                      		disable_channel_2A
+000058 9a53                      		enable_channel_2B
+000059 93b0 00b4                 		set_match_2B VL
                                  	end1:
-000038 9508                      ret
+00005b 9508                      ret
                                  
                                   go_right:
-000039 e000                      	ldi r16, 0
-00003a 17c0                      	cp SR, r16
-00003b f021                      	breq else2 ;if SR != 1 (forward)
-00003c 9855                      			disable_channel_0B
-00003d 9a56                      			enable_channel_0A
-00003e bdd7                      			set_match_0A VR
-00003f c003                      	rjmp end2
+00005c e000                      	ldi r16, 0
+00005d 17c0                      	cp SR, r16
+00005e f021                      	breq else2 ;if SR != 1 (forward)
+00005f 9855                      			disable_channel_0B
+000060 9a56                      			enable_channel_0A
+000061 bdd7                      			set_match_0A VR
+000062 c003                      	rjmp end2
                                  	else2: ; else if SR == 1 (backwards)
-000040 9856                      		disable_channel_0A
-000041 9a55                      		enable_channel_0B
-000042 bdd8                      		set_match_0B VR
+000063 9856                      		disable_channel_0A
+000064 9a55                      		enable_channel_0B
+000065 bdd8                      		set_match_0B VR
                                  	end2:
-000043 9508                      ret
+000066 9508                      ret
                                  
                                   #endif
                                  .include "encoders.asm"
@@ -1583,7 +1622,7 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16:  23 r17:   4 r18:   2 r19:   2 r20:   2 
+r13:   0 r14:   0 r15:   0 r16:  31 r17:   4 r18:   2 r19:   2 r20:   2 
 r21:   0 r22:   0 r23:   0 r24:   0 r25:   0 r26:   1 r27:   2 r28:   1 
 r29:   2 r30:   0 r31:   0 
 Registers used: 9 out of 35 (25.7%)
@@ -1594,26 +1633,26 @@ andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0
 brcc  :   0 brcs  :   0 break :   0 breq  :   2 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
 brne  :   3 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   0 call  :   1 cbi   :   6 cbr   :   0 
+brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   6 cbr   :   0 
 clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   0 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   2 cpc   :   0 
 cpi   :   0 cpse  :   0 dec   :   3 eor   :   1 fmul  :   0 fmuls :   0 
 fmulsu:   0 icall :   0 ijmp  :   0 in    :   1 inc   :   0 jmp   :   0 
-ld    :   0 ldd   :   0 ldi   :  14 lds   :   0 lpm   :   0 lsl   :   0 
+ld    :   0 ldd   :   0 ldi   :  18 lds   :   0 lpm   :   0 lsl   :   0 
 lsr   :   0 mov   :   0 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
 neg   :   0 nop   :   0 or    :   0 ori   :   0 out   :   7 pop   :   1 
-push  :   1 rcall :   0 ret   :   3 reti  :   0 rjmp  :   3 rol   :   0 
+push  :   1 rcall :   0 ret   :   3 reti  :   1 rjmp  :   5 rol   :   0 
 ror   :   0 sbc   :   0 sbci  :   0 sbi   :   7 sbic  :   0 sbis  :   0 
 sbiw  :   0 sbr   :   0 sbrc  :   0 sbrs  :   0 sec   :   0 seh   :   0 
-sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
-sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   6 
+sei   :   1 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
+sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :  10 
 sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 16 out of 113 (14.2%)
+Instructions used: 17 out of 113 (15.0%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000088    136      0    136   32768   0.4%
+[.cseg] 0x000000 0x0000ce    164      0    164   32768   0.5%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 

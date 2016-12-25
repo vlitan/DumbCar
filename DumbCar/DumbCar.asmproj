@@ -97,6 +97,12 @@
     <Compile Include="pwm.inc">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="timing.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="timing.inc">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="utils.asm">
       <SubType>Code</SubType>
     </Compile>
