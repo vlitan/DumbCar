@@ -33,13 +33,18 @@ start:
 	init_timer
 	sei
 	;------------------
-	inf:
-		;toggle_led
-		;CALL delay_ms
-	rjmp inf
+	run:
+
+	rjmp run
 
 tim1_compa:
-	 toggle_led
+	 inc MSL
+	 brvs ovrfl
+	 rjmp no_ovrfl
+	 ovrfl: 
+		inc MSH
+		toggle_led
+	 no_ovrfl:
 	reti
 ;====include methods===
 .include "utils.asm"

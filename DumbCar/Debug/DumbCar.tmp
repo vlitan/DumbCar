@@ -37,8 +37,10 @@
  </OUTPUT_FILES>
  <LABELS>
   <start><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>26</LINE></start>
-  <tim1_compa><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>41</LINE></tim1_compa>
-  <inf><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>36</LINE></inf>
+  <tim1_compa><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>40</LINE></tim1_compa>
+  <run><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>36</LINE></run>
+  <ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>45</LINE></ovrfl>
+  <no_ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>48</LINE></no_ovrfl>
   <delay_ms><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE><LINE>11</LINE></delay_ms>
   <L1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE><LINE>15</LINE></L1>
   <go_left><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>10</LINE></go_left>
