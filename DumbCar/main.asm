@@ -33,8 +33,13 @@ start:
 	init_timer
 	sei
 	;------------------
+	ldi SL, 0
+	ldi VL, 255
+	ldi SR, 0
+	ldi VR, 255
+	go
 	run:
-
+	
 	rjmp run
 
 tim1_compa:
