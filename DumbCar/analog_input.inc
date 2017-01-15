@@ -13,11 +13,11 @@
 
  .macro init_adc
 	cb_to_reg_h ADMUX, (1 << REFS0) | (1 << ADLAR); select vref == avcc
-	cb_to_reg_h ADCSRA,  (1<<ADPS2) /*| (1<<ADPS1)*/ | (1<<ADPS0) | (1<<ADEN) ;set prescaler to 128 and enable adc
+	cb_to_reg_h ADCSRA,  (1<<ADPS2) | (1<<ADPS0) | (1<<ADEN) ;set prescaler to 128 and enable adc
 
 .endmacro
 
-.macro analog_read //uses r17, not sure if its ok, so i push/pop it
+.macro analog_read 
 	;init conversion
 	set_bit_h ADCSRA, ADSC
 	;store 8bit result, ignore 2 lsb

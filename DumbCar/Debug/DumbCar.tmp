@@ -36,13 +36,13 @@
   <FILE>DumbCar.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <start><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>26</LINE></start>
-  <tim1_compa><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>45</LINE></tim1_compa>
+  <start><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>24</LINE></start>
+  <tim1_compa><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>47</LINE></tim1_compa>
+  <run><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>38</LINE></run>
   <go_left><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>10</LINE></go_left>
   <go_right><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>25</LINE></go_right>
-  <run><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>41</LINE></run>
-  <ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>49</LINE></ovrfl>
-  <no_ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>52</LINE></no_ovrfl>
+  <ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>51</LINE></ovrfl>
+  <no_ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>54</LINE></no_ovrfl>
   <delay_ms><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE><LINE>11</LINE></delay_ms>
   <L1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE><LINE>15</LINE></L1>
   <else1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>18</LINE></else1>

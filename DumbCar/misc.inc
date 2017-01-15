@@ -7,6 +7,8 @@
  #ifndef _MISC_INC_
  #define _MISC_INC_
 
+ .def DSS = r22
+
  .include "utils.inc"
 
  .macro init_led
@@ -26,6 +28,26 @@
  .endmacro
 
  .macro val_to_led
+ .endmacro
+
+  .macro compute_des_speed
+ analog_read
+ ldi r16, 127
+ cp r16, DS
+ brsh gre
+	ldi DSS, 1
+	sub DS, r16
+	set_led
+ rjmp end4
+ gre:
+	ldi DSS, 0
+	sub DS, r16
+	inc r16
+	sub r16, DS
+	mov DS, r16
+	clear_led
+ end4:
+ lsl DS
  .endmacro
 
  #endif
