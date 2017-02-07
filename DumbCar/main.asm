@@ -25,23 +25,59 @@ start:
     ;-----setup-------- 5.1)
 	init_motors
 	init_stack
-	init_encoders
 	init_adc
 	init_led
 	init_timer
-	sei
+;	sei
 	;------------------
 	ldi SL, 0
 	ldi VL, 255
 	ldi SR, 0
 	ldi VR, 255
+
 	run: ;5.2)
-		compute_des_speed ;5.2.1) get the desired speed. the value is stored in DS
-		mov SL, DSS
-		mov SR, DSS
-		mov VL, DS
-		mov VR, DS
-		go ;5.2.5) apply the values in SL, VL, SR and VR to the motors
+	     ;   compute_des_speed ;5.2.1) get the desired speed. the value is stored in DS
+		read_encoder 1
+		
+		sbrc ENC_Edge, 1
+			rjmp abc
+			rjmp cab
+			abc:
+				set_led
+				call delay_ms
+				clear_led
+				call delay_ms
+				set_led
+				call delay_ms
+				clear_led
+				call delay_ms
+			cab:
+		;sbrs ENC_VALS, 1
+		;	clear_led ; bit is 0
+			
+		/*	rjmp ABC
+			rjmp CBA
+		ABC:
+		set_led
+		ldi VL, 200
+		rjmp DND
+		CBA:
+		clear_led
+		ldi VL, 10
+		DND:*/
+		;mov VL, DS
+        ;mov VR, DS
+        ;go ;5.2.5) apply the values in SL, VL, SR and VR to the motors
+
+		
+		/*in r16, PIND
+		eor ENC_REG, r16
+		clear_led
+		sbrc ENC_REG, PD0
+		set_led
+		nop
+		in ENC_REG, PIND
+		CALL delay_ms*/
 	rjmp run
 ;timing interrupt
 tim1_compa:
@@ -50,7 +86,6 @@ tim1_compa:
 	 rjmp no_ovrfl
 	 ovrfl: 
 		inc MSH
-	//	toggle_led
 	 no_ovrfl:
 	reti
 ;====include methods===

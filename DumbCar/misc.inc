@@ -7,7 +7,7 @@
  #ifndef _MISC_INC_
  #define _MISC_INC_
 
- .def DSS = r22
+ .def DSS = r22 // desired speed sign
 
  .include "utils.inc"
 
@@ -31,7 +31,7 @@
  .endmacro
 
   .macro compute_des_speed
- analog_read
+ analog_read 0
  ldi r16, 127
  cp r16, DS
  brsh gre

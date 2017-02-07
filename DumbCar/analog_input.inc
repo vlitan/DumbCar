@@ -9,7 +9,7 @@
 
  .include "utils.inc"
 
- .def DS = r25
+ .def DS = r25 // desired speed
 
  .macro init_adc
 	cb_to_reg_h ADMUX, (1 << REFS0) | (1 << ADLAR); select vref == avcc
@@ -17,10 +17,23 @@
 
 .endmacro
 
-.macro analog_read 
+.macro analog_read ;8bit result
+	;set input multiplexer
+	.if @0 == 0
+		clear_bit_h ADMUX, 0
+		clear_bit_h ADMUX, 1
+	.elif @0 == 1
+		set_bit_h ADMUX, 0
+		clear_bit_h ADMUX, 1
+	.elif @0 == 2
+		clear_bit_h ADMUX, 0
+		set_bit_h ADMUX, 1
+	.endif
 	;init conversion
 	set_bit_h ADCSRA, ADSC
 	;store 8bit result, ignore 2 lsb
 	lds DS, ADCH
 .endmacro
+
+
  #endif

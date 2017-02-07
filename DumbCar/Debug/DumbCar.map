@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Sun Jan 15 14:14:51 2017
+AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Wed Feb 08 01:13:38 2017
 
 
 EQU  SIGNATURE_000 0000001e
@@ -699,22 +699,29 @@ DEF  SL           r26
 DEF  VL           r27
 DEF  SR           r28
 DEF  VR           r29
+DEF  ENC_VALS     r24
+DEF  ENC_EDGE     r23
 DEF  DS           r25
 DEF  DSS          r22
 DEF  MSL          r20
 DEF  MSH          r21
 CSEG start        00000017
-CSEG tim1_compa   0000005f
-CSEG run          00000041
-CSEG gre@compute_des_speed@3566 0000004f
-CSEG end4@compute_des_speed@3566 00000055
-CSEG go_left      0000006e
-CSEG go_right     0000007b
-CSEG ovrfl        00000062
-CSEG no_ovrfl     00000063
-CSEG delay_ms     00000064
-CSEG L1           00000067
-CSEG else1        00000076
-CSEG end1         0000007a
-CSEG else2        00000082
-CSEG end2         00000085
+CSEG tim1_compa   00000071
+CSEG run          0000003c
+CSEG lower@read_encoder@3623 00000051
+CSEG no_neg_edge@read_encoder@3623 00000056
+CSEG higher@read_encoder@3623 0000005b
+CSEG no_pos_edge@read_encoder@3623 00000060
+CSEG end_read@read_encoder@3623 00000061
+CSEG abc          00000064
+CSEG cab          00000070
+CSEG delay_ms     00000076
+CSEG ovrfl        00000074
+CSEG no_ovrfl     00000075
+CSEG L1           00000079
+CSEG go_left      00000080
+CSEG else1        00000088
+CSEG end1         0000008c
+CSEG go_right     0000008d
+CSEG else2        00000094
+CSEG end2         00000097
