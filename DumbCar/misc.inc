@@ -37,7 +37,6 @@
  brsh gre
 	ldi DSS, 1
 	sub DS, r16
-	set_led
  rjmp end4
  gre:
 	ldi DSS, 0
@@ -45,7 +44,6 @@
 	inc r16
 	sub r16, DS
 	mov DS, r16
-	clear_led
  end4:
  lsl DS
  .endmacro

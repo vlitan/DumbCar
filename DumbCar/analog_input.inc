@@ -13,12 +13,16 @@
 
  .macro init_adc
 	cb_to_reg_h ADMUX, (1 << REFS0) | (1 << ADLAR); select vref == avcc
-	cb_to_reg_h ADCSRA,  (1<<ADPS2) | (1<<ADPS0) | (1<<ADEN) ;set prescaler to 128 and enable adc
+	cb_to_reg_h ADCSRA,  (1<<ADPS2) | (1<<ADPS1) | (1<<ADEN) ;set prescaler to 128 and enable adc
 
 .endmacro
 
-.macro analog_read ;8bit result
-	;set input multiplexer
+.macro analog_read ;8bit result in DS
+
+		;set input channel via multiplexer
+	
+
+	init_adc
 	.if @0 == 0
 		clear_bit_h ADMUX, 0
 		clear_bit_h ADMUX, 1
@@ -29,10 +33,18 @@
 		clear_bit_h ADMUX, 0
 		set_bit_h ADMUX, 1
 	.endif
-	;init conversion
 	set_bit_h ADCSRA, ADSC
-	;store 8bit result, ignore 2 lsb
+
+
+	 ldi r17, 0
+	wait_adc:  
+		lds r16, ADCSRA
+		andi r16, (1 << ADSC)
+		cp r16, r17
+		brne wait_adc
+		
 	lds DS, ADCH
+
 .endmacro
 
 

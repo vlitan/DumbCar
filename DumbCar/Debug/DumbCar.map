@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Wed Feb 08 01:13:38 2017
+AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Wed Feb 08 19:33:08 2017
 
 
 EQU  SIGNATURE_000 0000001e
@@ -706,22 +706,30 @@ DEF  DSS          r22
 DEF  MSL          r20
 DEF  MSH          r21
 CSEG start        00000017
-CSEG tim1_compa   00000071
-CSEG run          0000003c
-CSEG lower@read_encoder@3623 00000051
-CSEG no_neg_edge@read_encoder@3623 00000056
-CSEG higher@read_encoder@3623 0000005b
-CSEG no_pos_edge@read_encoder@3623 00000060
-CSEG end_read@read_encoder@3623 00000061
-CSEG abc          00000064
-CSEG cab          00000070
-CSEG delay_ms     00000076
-CSEG ovrfl        00000074
-CSEG no_ovrfl     00000075
-CSEG L1           00000079
-CSEG go_left      00000080
-CSEG else1        00000088
-CSEG end1         0000008c
-CSEG go_right     0000008d
-CSEG else2        00000094
-CSEG end2         00000097
+CSEG tim1_compa   000000d4
+CSEG run          0000003e
+CSEG wait_adc@analog_read@3649 00000054
+CSEG no_neg_edge1@read_encoder@3647 00000063
+CSEG no_pos_edge1@read_encoder@3647 0000006c
+CSEG end_read1@read_encoder@3647 0000006d
+CSEG wait_adc@analog_read@3737 00000083
+CSEG no_neg_edge2@read_encoder@3735 00000092
+CSEG no_pos_edge2@read_encoder@3735 0000009b
+CSEG end_read2@read_encoder@3735 0000009c
+CSEG wait_adc@analog_read@3825 000000b2
+CSEG gre@compute_des_speed@3823 000000bf
+CSEG end4@compute_des_speed@3823 000000c4
+CSEG edg1         000000c8
+CSEG nedg1        000000c9
+CSEG edg2         000000cc
+CSEG nedg2        000000cd
+CSEG go_left      000000e3
+CSEG go_right     000000f0
+CSEG ovrfl        000000d7
+CSEG no_ovrfl     000000d8
+CSEG delay_ms     000000d9
+CSEG L1           000000dc
+CSEG else1        000000eb
+CSEG end1         000000ef
+CSEG else2        000000f7
+CSEG end2         000000fa

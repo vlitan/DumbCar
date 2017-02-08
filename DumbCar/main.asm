@@ -27,8 +27,9 @@ start:
 	init_stack
 	init_adc
 	init_led
+	init_encoders
 	init_timer
-;	sei
+	sei
 	;------------------
 	ldi SL, 0
 	ldi VL, 255
@@ -36,48 +37,27 @@ start:
 	ldi VR, 255
 
 	run: ;5.2)
-	     ;   compute_des_speed ;5.2.1) get the desired speed. the value is stored in DS
 		read_encoder 1
-		
-		sbrc ENC_Edge, 1
-			rjmp abc
-			rjmp cab
-			abc:
-				set_led
-				call delay_ms
-				clear_led
-				call delay_ms
-				set_led
-				call delay_ms
-				clear_led
-				call delay_ms
-			cab:
-		;sbrs ENC_VALS, 1
-		;	clear_led ; bit is 0
-			
-		/*	rjmp ABC
-			rjmp CBA
-		ABC:
-		set_led
-		ldi VL, 200
-		rjmp DND
-		CBA:
-		clear_led
-		ldi VL, 10
-		DND:*/
-		;mov VL, DS
-        ;mov VR, DS
-        ;go ;5.2.5) apply the values in SL, VL, SR and VR to the motors
+		read_encoder 2
+		compute_des_speed ;5.2.1) get the desired speed. the value is stored in DS
+		sbrc ENC_EDGE, 1
+			rjmp edg1
+		rjmp nedg1
+		edg1:;***edge on encoder 2***
 
+		nedg1:;***end edge on encoder 2***
 		
-		/*in r16, PIND
-		eor ENC_REG, r16
-		clear_led
-		sbrc ENC_REG, PD0
-		set_led
-		nop
-		in ENC_REG, PIND
-		CALL delay_ms*/
+		sbrs ENC_EDGE, 2
+			rjmp edg2
+		rjmp nedg2
+		edg2:;***edge on encoder 2***
+	
+		nedg2:;***end edge on encoder 2***
+		mov VL, DS
+		mov VR, DS
+        go ;5.2.5) apply the values in SL, VL, SR and VR to the motors
+		
+	
 	rjmp run
 ;timing interrupt
 tim1_compa:
