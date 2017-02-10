@@ -26,8 +26,8 @@
   .macro read_encoder	;arg0: 1 or 2. hysteresis involed
 	analog_read @0		;read current value
 	/*if enc==h and val < tl enc = l, edge = 1*/
-	cpi r16, TL ;
-	brlo no_neg_edge@0
+	cpi DS, TL ;
+	brsh no_neg_edge@0
 		sbrs ENC_VALS, @0  
 			rjmp no_neg_edge@0 ;if the bit is 0 this jump will be made
 		andi ENC_VALS, ~(1 << @0) ;enc = L
@@ -41,11 +41,13 @@
 	brlo no_pos_edge@0
 		sbrc ENC_VALS, @0  
 			rjmp no_pos_edge@0 ;if the bit is 1 this jump will be made*/
+		;enc == L and val > TH
 		ori ENC_VALS, (1 << @0) ;enc = H
 		ori ENC_EDGE, (1 << @0) ;edge = 1
 		rjmp end_read@0
 	no_pos_edge@0:
 		andi ENC_EDGE, ~(1 << @0) ;edge = 0
+
 	end_read@0:
 .endmacro
 

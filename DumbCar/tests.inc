@@ -21,7 +21,7 @@
  .endmacro
  
 
- .macro test_motors
+ .macro test_motor
 	compute_des_speed
 	.if @0 == 1
 		mov VL, DS
@@ -62,10 +62,6 @@
 			add LAST_MSL, MS_DIFL
 			adc LAST_MSH, MS_DIFH
 		; at this point the time interval between the edges is in MS_DIFH:MS_DIFL 5.2.2.3
-		;apply constrain(). i.e. if MS_DIFH > 0 then MS_DIFL = 255 TODO
-	//!	cpi MS_DIFH, 0
-	//!	breq nedg1
-	//!		ldi MS_DIFL, 0xff
 		nedg@0:;***end edge on encoder 2***
 
 		cpi MS_DIFL, @1

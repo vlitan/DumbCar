@@ -84,29 +84,3 @@
 	.endmacro
  
  #endif
-
-		/*
-		cpi MS_DIFL, low(5)
-		ldi r16, high(5)
-		cpc MS_DIFH, r16
-		breq all_fine@0
-
-		cpi MS_DIFL, low(5)
-		ldi r16, high(5)
-		cpc MS_DIFH, r16
-		brlo ds_lower@0
-		.if @0 == 1;lower speed
-			inc VL
-		.else
-			inc VR
-		.endif
-			set_led
-		rjmp all_fine@0
-		ds_lower@0:;higher speed
-		.if @0 == 1
-			dec VL
-		.else
-			dec VR
-		.endif
-		all_fine@0:
-		*/

@@ -1,70 +1,70 @@
 
-AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Fri Feb 10 02:27:18 2017
+AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Fri Feb 10 11:57:16 2017
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328pdef.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(9): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc(12): warning: Register r26 already defined by the .DEF directive
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(13): 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc' included form here
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc' included form here
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc(13): warning: Register r27 already defined by the .DEF directive
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(13): 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc' included form here
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc' included form here
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc(14): warning: Register r28 already defined by the .DEF directive
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(13): 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc' included form here
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc' included form here
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc(15): warning: Register r29 already defined by the .DEF directive
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(13): 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc' included form here
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(14): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc' included form here
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(15): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(16): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(14): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(17): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\timing.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(18): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(15): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\timing.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(16): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(19): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(59): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(60): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(61): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(62): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(63): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(17): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(58): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(59): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(60): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(61): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(62): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(63): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328pdef.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(9): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(14): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(15): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(16): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(14): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(17): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\timing.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(18): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(15): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\timing.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(16): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(19): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(59): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(60): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(61): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(62): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(63): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(17): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(58): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(59): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(60): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(61): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(62): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(63): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
                                  
                                  ;
                                  
@@ -1053,8 +1053,6 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
                                  ; Author : virgil
                                  ;
                                  
-                                 
-                                 
                                  ;=====includes=========
                                  .include "m328Pdef.inc"
                                  
@@ -1435,8 +1433,8 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
                                    .macro read_encoder	;arg0: 1 or 2. hysteresis involed
                                  	analog_read @0		;read current value
                                  	/*if enc==h and val < tl enc = l, edge = 1*/
-                                 	cpi r16, TL ;
-                                 	brlo no_neg_edge@0
+                                 	cpi DS, TL ;
+                                 	brsh no_neg_edge@0
                                  		sbrs ENC_VALS, @0  
                                  			rjmp no_neg_edge@0 ;if the bit is 0 this jump will be made
                                  		andi ENC_VALS, ~(1 << @0) ;enc = L
@@ -1450,11 +1448,13 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
                                  	brlo no_pos_edge@0
                                  		sbrc ENC_VALS, @0  
                                  			rjmp no_pos_edge@0 ;if the bit is 1 this jump will be made*/
+                                 		;enc == L and val > TH
                                  		ori ENC_VALS, (1 << @0) ;enc = H
                                  		ori ENC_EDGE, (1 << @0) ;edge = 1
                                  		rjmp end_read@0
                                  	no_pos_edge@0:
                                  		andi ENC_EDGE, ~(1 << @0) ;edge = 0
+                                 
                                  	end_read@0:
                                  .endmacro
                                  
@@ -1705,31 +1705,6 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
                                  	.endmacro
                                   
                                   #endif
-                                 
-                                 		/*
-                                 		cpi MS_DIFL, low(5)
-                                 		ldi r16, high(5)
-                                 		cpc MS_DIFH, r16
-                                 		breq all_fine@0
-                                 
-                                 		cpi MS_DIFL, low(5)
-                                 		ldi r16, high(5)
-                                 		cpc MS_DIFH, r16
-                                 		brlo ds_lower@0
-                                 		.if @0 == 1;lower speed
-                                 			inc VL
-                                 		.else
-                                 			inc VR
-                                 		.endif
-                                 			set_led
-                                 		rjmp all_fine@0
-                                 		ds_lower@0:;higher speed
-                                 		.if @0 == 1
-                                 			dec VL
-                                 		.else
-                                 			dec VR
-                                 		.endif
-                                 		all_fine@0:
                                   .include "motors.inc"
                                  
                                   * motors.inc
@@ -1750,7 +1725,7 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
                                   .endmacro
                                   
                                  
-                                  .macro test_motors
+                                  .macro test_motor
                                  	compute_des_speed
                                  	.if @0 == 1
                                  		mov VL, DS
@@ -1791,10 +1766,6 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
                                  			add LAST_MSL, MS_DIFL
                                  			adc LAST_MSH, MS_DIFH
                                  		; at this point the time interval between the edges is in MS_DIFH:MS_DIFL 5.2.2.3
-                                 		;apply constrain(). i.e. if MS_DIFH > 0 then MS_DIFL = 255 TODO
-                                 	//!	cpi MS_DIFH, 0
-                                 	//!	breq nedg1
-                                 	//!		ldi MS_DIFL, 0xff
                                  		nedg@0:;***end edge on encoder 2***
                                  
                                  		cpi MS_DIFL, @1
@@ -1819,31 +1790,6 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
                                  
                                   #ifndef _FEEDBACK_INC_
                                   #endif
-                                 
-                                 		/*
-                                 		cpi MS_DIFL, low(5)
-                                 		ldi r16, high(5)
-                                 		cpc MS_DIFH, r16
-                                 		breq all_fine@0
-                                 
-                                 		cpi MS_DIFL, low(5)
-                                 		ldi r16, high(5)
-                                 		cpc MS_DIFH, r16
-                                 		brlo ds_lower@0
-                                 		.if @0 == 1;lower speed
-                                 			inc VL
-                                 		.else
-                                 			inc VR
-                                 		.endif
-                                 			set_led
-                                 		rjmp all_fine@0
-                                 		ds_lower@0:;higher speed
-                                 		.if @0 == 1
-                                 			dec VL
-                                 		.else
-                                 			dec VR
-                                 		.endif
-                                 		all_fine@0:
                                  ;======defines=========
                                  .org 0x0000
 000000 c04a                      rjmp start ; reset ISR
@@ -1903,6 +1849,7 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
 000048 090c
 000049 0306
 00004a 0000                          .db 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 253, 250, 247, 244, 241, 238, 236, 233, 230, 227, 224, 221, 219, 216, 213, 210, 207, 204, 202, 199, 196, 193, 190, 187, 185, 182, 179, 176, 173, 170, 168, 165, 162, 159, 156, 153, 15                                 1, 148, 145, 142, 139, 136, 134, 131, 128, 125, 122, 119, 117, 114, 111, 108, 105, 102, 100, 97, 94, 91, 88, 85, 83, 80, 77, 74, 71, 68, 66, 63, 60, 57, 54, 51, 49, 46, 43, 40, 37, 34, 32, 29, 26, 23, 20, 17, 15, 12, 9, 6, 3, 0, 0
+                                 
                                  .cseg
                                  start:
 00004b 2733
@@ -1947,7 +1894,7 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
 00007a 9478                      	sei
                                  	;------------------
                                  
-                                 	run: ;5.2)
+                                 	run:
 00007b 985a                      		clear_led
 00007c e600
 00007d 9300 007c
@@ -1967,8 +1914,8 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
 000094 3000
 000095 f7d9
 000096 9190 0079
-000098 3406
-000099 f028
+000098 3496
+000099 f428
 00009a ff81
 00009b c003
 00009c 7f8d
@@ -2042,7 +1989,7 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
 0000ea ef9f
 0000eb c000
 0000ec 2fb9
-0000ed 2fa6                      		feedback 1
+0000ed 2fa6                      		feedback 1 ;feedback for left motor
 0000ee e600
 0000ef 9300 007c
 0000f1 e806
@@ -2061,8 +2008,8 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
 000106 3000
 000107 f7d9
 000108 9190 0079
-00010a 3406
-00010b f028
+00010a 3496
+00010b f428
 00010c ff82
 00010d c003
 00010e 7f8b
@@ -2136,9 +2083,9 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Includin
 00015c ef9f
 00015d c000
 00015e 2fd9
-00015f 2fc6                      		feedback 2
+00015f 2fc6                      		feedback 2 ;feedback for right motor
 000160 940e 0174
-000162 940e 0180                 		go;5.2.5) apply the values in SL, VL, SR and VR to the motors*/
+000162 940e 0180                 		go; apply the values in SL, VL, SR and VR to the motors
 000164 cf16                      	rjmp run
                                  
                                  ;timing interrupt
@@ -2280,8 +2227,8 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   6 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   3 r6 :   3 r7 :   3 r8 :   3 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16: 118 r17:   0 r18:  11 r19:   9 r20:   6 
-r21:   4 r22:   6 r23:  11 r24:   9 r25:  30 r26:   3 r27:   4 r28:   3 
+r13:   0 r14:   0 r15:   0 r16: 116 r17:   0 r18:  11 r19:   9 r20:   6 
+r21:   4 r22:   6 r23:  11 r24:   9 r25:  32 r26:   3 r27:   4 r28:   3 
 r29:   4 r30:   4 r31:   4 
 Registers used: 20 out of 35 (57.1%)
 
@@ -2289,8 +2236,8 @@ Registers used: 20 out of 35 (57.1%)
 .lds  :   0 .sts  :   0 adc   :   4 add   :   6 adiw  :   0 and   :   0 
 andi  :  16 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
 brcc  :   0 brcs  :   0 break :   0 breq  :   4 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   6 brlt  :   0 brmi  :   0 
-brne  :   7 brpl  :   0 brsh  :   2 brtc  :   0 brts  :   0 brvc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   4 brlt  :   0 brmi  :   0 
+brne  :   7 brpl  :   0 brsh  :   4 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   3 bset  :   0 bst   :   0 call  :   2 cbi   :   5 cbr   :   0 
 clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :  14 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   6 cpc   :   0 

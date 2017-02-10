@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Fri Feb 10 02:27:18 2017
+AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Fri Feb 10 11:57:16 2017
 
 
 EQU  SIGNATURE_000 0000001e
@@ -716,32 +716,32 @@ CSEG start        0000004b
 CSEG tim1_compa   00000165
 CSEG map_vals     00000017
 CSEG run          0000007b
-CSEG wait_adc@analog_read@4267 00000091
-CSEG no_neg_edge1@read_encoder@4265 0000009f
-CSEG no_pos_edge1@read_encoder@4265 000000a7
-CSEG end_read1@read_encoder@4265 000000a8
-CSEG wait_adc@analog_read@4345 000000bd
-CSEG gre@compute_des_speed@4343 000000ca
-CSEG end4@compute_des_speed@4343 000000cf
-CSEG edg1@feedback@4263 000000d3
-CSEG nedg1@feedback@4263 000000d9
-CSEG ovrflow1@feedback@4263 000000ea
-CSEG no_ovrflow1@feedback@4263 000000eb
-CSEG ds_lower1@feedback@4263 000000ec
-CSEG all_fine1@feedback@4263 000000ec
-CSEG wait_adc@analog_read@4479 00000103
-CSEG no_neg_edge2@read_encoder@4477 00000111
-CSEG no_pos_edge2@read_encoder@4477 00000119
-CSEG end_read2@read_encoder@4477 0000011a
-CSEG wait_adc@analog_read@4557 0000012f
-CSEG gre@compute_des_speed@4555 0000013c
-CSEG end4@compute_des_speed@4555 00000141
-CSEG edg2@feedback@4475 00000145
-CSEG nedg2@feedback@4475 0000014b
-CSEG ovrflow2@feedback@4475 0000015c
-CSEG no_ovrflow2@feedback@4475 0000015d
-CSEG ds_lower2@feedback@4475 0000015e
-CSEG all_fine2@feedback@4475 0000015e
+CSEG wait_adc@analog_read@4218 00000091
+CSEG no_neg_edge1@read_encoder@4216 0000009f
+CSEG no_pos_edge1@read_encoder@4216 000000a7
+CSEG end_read1@read_encoder@4216 000000a8
+CSEG wait_adc@analog_read@4298 000000bd
+CSEG gre@compute_des_speed@4296 000000ca
+CSEG end4@compute_des_speed@4296 000000cf
+CSEG edg1@feedback@4214 000000d3
+CSEG nedg1@feedback@4214 000000d9
+CSEG ovrflow1@feedback@4214 000000ea
+CSEG no_ovrflow1@feedback@4214 000000eb
+CSEG ds_lower1@feedback@4214 000000ec
+CSEG all_fine1@feedback@4214 000000ec
+CSEG wait_adc@analog_read@4432 00000103
+CSEG no_neg_edge2@read_encoder@4430 00000111
+CSEG no_pos_edge2@read_encoder@4430 00000119
+CSEG end_read2@read_encoder@4430 0000011a
+CSEG wait_adc@analog_read@4512 0000012f
+CSEG gre@compute_des_speed@4510 0000013c
+CSEG end4@compute_des_speed@4510 00000141
+CSEG edg2@feedback@4428 00000145
+CSEG nedg2@feedback@4428 0000014b
+CSEG ovrflow2@feedback@4428 0000015c
+CSEG no_ovrflow2@feedback@4428 0000015d
+CSEG ds_lower2@feedback@4428 0000015e
+CSEG all_fine2@feedback@4428 0000015e
 CSEG go_left      00000174
 CSEG go_right     00000180
 CSEG ovrfl        00000168

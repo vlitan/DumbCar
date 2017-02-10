@@ -38,14 +38,14 @@
   <FILE>DumbCar.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <start><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>29</LINE></start>
-  <tim1_compa><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>49</LINE></tim1_compa>
-  <map_vals><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>26</LINE></map_vals>
-  <run><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>41</LINE></run>
+  <start><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>28</LINE></start>
+  <tim1_compa><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>48</LINE></tim1_compa>
+  <map_vals><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>24</LINE></map_vals>
+  <run><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>40</LINE></run>
   <go_left><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>10</LINE></go_left>
   <go_right><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>24</LINE></go_right>
-  <ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>53</LINE></ovrfl>
-  <no_ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>55</LINE></no_ovrfl>
+  <ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>52</LINE></ovrfl>
+  <no_ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>54</LINE></no_ovrfl>
   <delay_ms><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE><LINE>11</LINE></delay_ms>
   <L1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE><LINE>15</LINE></L1>
   <else1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>17</LINE></else1>
