@@ -18,6 +18,8 @@
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\timing.inc</FILE>
+  <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc</FILE>
+  <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm</FILE>
   <FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE>
@@ -36,22 +38,19 @@
   <FILE>DumbCar.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <start><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>24</LINE></start>
-  <tim1_compa><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>63</LINE></tim1_compa>
-  <run><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>39</LINE></run>
-  <edg1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>46</LINE></edg1>
-  <nedg1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>48</LINE></nedg1>
-  <edg2><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>53</LINE></edg2>
-  <nedg2><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>55</LINE></nedg2>
+  <start><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>29</LINE></start>
+  <tim1_compa><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>49</LINE></tim1_compa>
+  <map_vals><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>26</LINE></map_vals>
+  <run><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>41</LINE></run>
   <go_left><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>10</LINE></go_left>
-  <go_right><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>25</LINE></go_right>
-  <ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>67</LINE></ovrfl>
-  <no_ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>69</LINE></no_ovrfl>
+  <go_right><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>24</LINE></go_right>
+  <ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>53</LINE></ovrfl>
+  <no_ovrfl><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm</FILE><LINE>55</LINE></no_ovrfl>
   <delay_ms><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE><LINE>11</LINE></delay_ms>
   <L1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm</FILE><LINE>15</LINE></L1>
-  <else1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>18</LINE></else1>
-  <end1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>22</LINE></end1>
-  <else2><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>33</LINE></else2>
-  <end2><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>37</LINE></end2>
+  <else1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>17</LINE></else1>
+  <end1><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>21</LINE></end1>
+  <else2><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>31</LINE></else2>
+  <end2><FILE>C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm</FILE><LINE>35</LINE></end2>
  </LABELS>
 </ASSEMBLER_INFO>

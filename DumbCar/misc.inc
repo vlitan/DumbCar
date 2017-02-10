@@ -48,4 +48,20 @@
  lsl DS
  .endmacro
 
+ .macro read_map ;result in r0. reads values from the look_up table map_vals
+		mov r16, @0 ;load index
+		ldi ZH,high(2*map_vals) ; Load high part of byte address into ZH
+		ldi ZL,low(2*map_vals) ; Load low part of byte address into ZL
+		add ZL, r16	;add index
+		ldi r16, 0
+		adc ZH, r16 ;propagate carry
+		lpm	;load value from address ZH:ZL in r0
+.endmacro
+
+.macro init_regs ;clear registers
+	clr MS_DIFH
+	clr LAST_MSH
+	clr MS_DIFL
+	clr LAST_MSL
+.endmacro
  #endif

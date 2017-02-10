@@ -8,8 +8,7 @@
  #define _MOTORS_ASM_
 
  go_left:
-	ldi r16, 0
-	cp SL, r16
+	cpi SL, 0
 	breq else1 ;if SL != 1 (forward)
 			disable_channel_2B
 			enable_channel_2A
@@ -23,8 +22,7 @@
 ret
 
  go_right:
-	ldi r16, 0
-	cp SR, r16
+	cpi SR, 0
 	breq else2 ;if SR != 1 (forward)
 			disable_channel_0B
 			enable_channel_0A

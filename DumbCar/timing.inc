@@ -8,20 +8,16 @@
  #ifndef _TIMING_INC_
  #define _TIMING_INC_
  
- .def MSL = r20
- .def MSH = r21
+ .def MSL = r20 ;milliseconds low byte
+ .def MSH = r21 ;milliseconds high byte
  
- .macro init_timer ; init timer, interupts occur each 0.5 ms
-   /* cb_to_reg_h TCCR1B,(1 << WGM12)|(1<<CS11)|(1<<CS10); timer clock = system clock/64
-    cb_to_reg_h OCR1AH, 0x00
-    cb_to_reg_h OCR1AL, 0xff*/
-
-
-	cb_to_reg_h TCCR1B,(1 << WGM12)|(1<<CS11); timer clock = system clock/8
-	cb_to_reg_h OCR1AH, 0x0f ;set match value to 499
-	cb_to_reg_h OCR1AL, 0xf3
-
-	cb_to_reg_h TIMSK1, 1<<OCIE1A
+ .macro init_timer ; init timer, interupts occur each 1 ms
+	clr MSL ;clear registers
+	clr MSH
+ 	cb_to_reg_h OCR1AH, 0x1A;0x7A	;set compare values
+    cb_to_reg_h OCR1AL, 0x10;0x10
+	cb_to_reg_h TIMSK1, 1<<OCIE1A	;enable match interrupt
+    cb_to_reg_h TCCR1B,(1 << WGM12)|(1 << CS10); timer clock = system clock; start clock
  .endmacro
 
  #endif

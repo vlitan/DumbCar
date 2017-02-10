@@ -77,6 +77,9 @@
     <Compile Include="encoders.inc">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="feedback.inc">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="main.asm">
       <SubType>Code</SubType>
     </Compile>
@@ -96,6 +99,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="pwm.inc">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests.inc">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="timing.asm">

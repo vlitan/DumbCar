@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Wed Feb 08 19:33:08 2017
+AVRASM ver. 2.2.6  C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm Fri Feb 10 02:27:18 2017
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
@@ -17,17 +17,26 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(13): 'C:\User
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc(15): warning: Register r29 already defined by the .DEF directive
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(13): 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc' included form here
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(14): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(15): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(15): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(16): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(17): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\timing.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(72): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(73): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(74): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(75): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(76): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(18): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(19): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(59): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(60): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(61): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(62): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(63): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
@@ -36,17 +45,26 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc(10): Includ
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328Pdef.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(14): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(15): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(15): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(16): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.inc'
 C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(17): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\timing.inc'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(72): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(73): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(74): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(75): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(76): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
-C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(18): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(10): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(11): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc(13): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\tests.inc(12): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(19): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\feedback.inc'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(59): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\utils.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(60): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\pwm.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(61): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\motors.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(62): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\encoders.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(63): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\analog_input.asm'
+C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(64): Including file 'C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\misc.asm'
                                  
                                  ;
                                  
@@ -1092,11 +1110,13 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                  
                                   #ifndef _UTILS_INC_
                                   #define _UTILS_INC_
+                                 ;copy byte into register if the register is at low address
                                  .macro cb_to_reg_l ;  reg byte
                                  	ldi r16, @1
                                  	out @0, r16
                                  .endmacro
                                  
+                                 ;copy byte into register if the register is at high address
                                  .macro cb_to_reg_h ;  reg byte
                                  	ldi r16, @1
                                  	sts @0, r16
@@ -1107,36 +1127,42 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                  	cb_to_reg_l SPH, high(RAMEND)
                                  .endmacro
                                  
+                                 ;sets bit in register if the register is at high address
                                  .macro set_bit_h
                                  	lds r16, @0
                                  	ori r16, (1 << @1)
                                  	sts @0, r16
                                  .endmacro
                                  
+                                 ;sets bit in register if the register is at low address
                                  .macro set_bit_l
                                  	in r16, @0
                                  	ori r16, (1 << @1)
                                  	out @0, r16
                                  .endmacro
                                  
+                                 ;clears bit in register if the register is at low address
                                  .macro clear_bit_h
                                  	lds r16, @0
                                  	andi r16, ~(1 << @1)
                                  	sts @0, r16
                                  .endmacro
                                  
+                                 ;clears bit in register if the register is at high address
                                  .macro clear_bit_l
                                  	in r16, @0
                                  	andi r16, ~(1 << @1)
                                  	out @0, r16
                                  .endmacro
                                  
+                                 ;toggle bit in register if the register is at high address
                                  .macro toggle_bit_h
                                  	lds r16, @0
                                  	eor r16, (1 << @1)
                                  	sts @0, r16
                                  .endmacro
                                  
+                                 ;toggle bit in register if the register is at low address
                                  .macro toggle_bit_l ;TODO r17 used here
                                  	in r16, @0
                                  	push r17
@@ -1145,7 +1171,6 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                  	pop r17
                                  	out @0, r16
                                  .endmacro
-                                 
                                  
                                   #endif
                                  .include "motors.inc"
@@ -1312,11 +1337,15 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                   .def VR = r29 ;value left
                                  
                                   .macro init_motors
-                                  	init_timer_0
+                                 	clr SL ;clear registers
+                                 	clr VL
+                                 	clr SR
+                                 	clr VR
+                                  	init_timer_0 ; init timers
                                  	init_timer_2
                                   .endmacro
                                  
-                                  .macro go
+                                  .macro go ;call routines for each motor
                                   CALL go_left
                                   CALL go_right
                                   .endmacro
@@ -1335,73 +1364,14 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                   #ifndef _ENCODERS_INC_
                                   #define _ENCODERS_INC_
                                  
-                                  #define TL 70
-                                  #define TH 120
-                                 
-                                  .def ENC_VALS = r24
-                                  .def ENC_EDGE = r23
-                                 
-                                  .macro init_encoders
-                                 	/*cbi DDRD, PD0 ; use as input
-                                 	cbi DDRD, PD1 ; use as input
-                                 	sbi PORTD, PD0 ; set internal pull-up
-                                 	sbi PORTD, PD1 ; set internal pull-up*/
-                                 	clr ENC_VALS
-                                 	clr ENC_EDGE
-                                 	/*analog_read 1
-                                 	ldi r16, TH
-                                 	cp r16, DS
-                                 	brlo g1
-                                 		ori ENC_VALS, 1;enc = H
-                                 	g1:
-                                 	analog_read 2
-                                 	ldi r16, TH
-                                 	cp r16, DS
-                                 	brlo g2
-                                 		ori ENC_VALS, 2 ;enc = H
-                                 	g2:*/
-                                  .endmacro
-                                 
-                                   .macro read_encoder /*1 or 2*/;hysteresis
-                                 	analog_read @0
-                                 	/*if enc==h and val < tl enc = l, edge = 1*/
-                                 	ldi r16, TL
-                                 	cp r16, DS
-                                 	brlo no_neg_edge@0
-                                 		sbrs ENC_VALS, @0  
-                                 			rjmp no_neg_edge@0 ;if the bit is 0 this jump will be made
-                                 		;enc == H and val < TL
-                                 		andi ENC_VALS, ~(1 << @0) ;enc = L
-                                 		ori ENC_EDGE, (1 << @0) ;edge = 1
-                                 		rjmp end_read@0
-                                 	no_neg_edge@0:
-                                 		andi ENC_EDGE, ~(1 << @0) ;edge = 0
-                                 
-                                 	/*if enc==l and val > th enc = h, edge = 1*/
-                                 	ldi r16, TH
-                                 	cp  DS, r16
-                                 	brlo no_pos_edge@0;val > th
-                                 		sbrc ENC_VALS, @0  
-                                 			rjmp no_pos_edge@0 ;if the bit is 1 this jump will be made*/
-                                 		;enc == L and val > TH
-                                 		ori ENC_VALS, (1 << @0) ;enc = H
-                                 		ori ENC_EDGE, (1 << @0) ;edge = 1
-                                 		rjmp end_read@0
-                                 	no_pos_edge@0:
-                                 		andi ENC_EDGE, ~(1 << @0) ;edge = 0
-                                 
-                                 	end_read@0:
-                                 .endmacro
-                                 
-                                  #endif
-                                 .include "analog_input.inc"
+                                  .include "analog_input.inc"
                                  
                                   * analog_input.inc
                                   *
                                   *  Created: 12/11/2016 6:14:26 PM
                                   *   Author: virgil
                                   */ 
-                                  #ifndef _ANLOG_INPUT_INC_
+                                  #ifndef _ANALOG_INPUT_INC_
                                   #define _ANALOG_INPUT_INC_
                                  
                                   .include "utils.inc"
@@ -1417,18 +1387,15 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                  
                                   .def DS = r25 // desired speed
                                  
-                                  .macro init_adc
+                                  .macro init_adc ;setup the adc
                                  	cb_to_reg_h ADMUX, (1 << REFS0) | (1 << ADLAR); select vref == avcc
                                  	cb_to_reg_h ADCSRA,  (1<<ADPS2) | (1<<ADPS1) | (1<<ADEN) ;set prescaler to 128 and enable adc
-                                 
                                  .endmacro
                                  
-                                 .macro analog_read ;8bit result in DS
-                                 
-                                 		;set input channel via multiplexer
-                                 	
-                                 
-                                 	init_adc
+                                 .macro analog_read ;8bit result saved in DS
+                                  
+                                 	init_adc ; almost sure this is redundant
+                                 	;set input channel via multiplexer
                                  	.if @0 == 0
                                  		clear_bit_h ADMUX, 0
                                  		clear_bit_h ADMUX, 1
@@ -1439,21 +1406,67 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                  		clear_bit_h ADMUX, 0
                                  		set_bit_h ADMUX, 1
                                  	.endif
+                                 	;start conversion
                                  	set_bit_h ADCSRA, ADSC
-                                 
-                                 
-                                 	 ldi r17, 0
+                                 	;wait conversion to end
                                  	wait_adc:  
                                  		lds r16, ADCSRA
                                  		andi r16, (1 << ADSC)
-                                 		cp r16, r17
+                                 		cpi r16, 0
                                  		brne wait_adc
-                                 		
+                                 	;save result
                                  	lds DS, ADCH
-                                 
                                  .endmacro
                                  
                                  
+                                  #endif
+                                  
+                                  #define TL 70	;low treshold
+                                  #define TH 120 ;high treshold
+                                 
+                                  .def ENC_VALS = r24 ;stores current values of the ecoders
+                                  .def ENC_EDGE = r23 ;stores if there was an positive/negative edge
+                                 
+                                  .macro init_encoders ;clear registers
+                                 	clr ENC_VALS
+                                 	clr ENC_EDGE
+                                  .endmacro
+                                 
+                                   .macro read_encoder	;arg0: 1 or 2. hysteresis involed
+                                 	analog_read @0		;read current value
+                                 	/*if enc==h and val < tl enc = l, edge = 1*/
+                                 	cpi r16, TL ;
+                                 	brlo no_neg_edge@0
+                                 		sbrs ENC_VALS, @0  
+                                 			rjmp no_neg_edge@0 ;if the bit is 0 this jump will be made
+                                 		andi ENC_VALS, ~(1 << @0) ;enc = L
+                                 		ori ENC_EDGE, (1 << @0) ;edge = 1
+                                 		rjmp end_read@0
+                                 	no_neg_edge@0:
+                                 		andi ENC_EDGE, ~(1 << @0) ;edge = 0
+                                 
+                                 	/*if enc==l and val > th enc = h, edge = 1*/
+                                 	cpi  DS, TH
+                                 	brlo no_pos_edge@0
+                                 		sbrc ENC_VALS, @0  
+                                 			rjmp no_pos_edge@0 ;if the bit is 1 this jump will be made*/
+                                 		ori ENC_VALS, (1 << @0) ;enc = H
+                                 		ori ENC_EDGE, (1 << @0) ;edge = 1
+                                 		rjmp end_read@0
+                                 	no_pos_edge@0:
+                                 		andi ENC_EDGE, ~(1 << @0) ;edge = 0
+                                 	end_read@0:
+                                 .endmacro
+                                 
+                                  #endif
+                                 .include "analog_input.inc"
+                                 
+                                  * analog_input.inc
+                                  *
+                                  *  Created: 12/11/2016 6:14:26 PM
+                                  *   Author: virgil
+                                  */ 
+                                  #ifndef _ANALOG_INPUT_INC_
                                   #endif
                                  .include "misc.inc"
                                  
@@ -1515,6 +1528,22 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                   lsl DS
                                   .endmacro
                                  
+                                  .macro read_map ;result in r0. reads values from the look_up table map_vals
+                                 		mov r16, @0 ;load index
+                                 		ldi ZH,high(2*map_vals) ; Load high part of byte address into ZH
+                                 		ldi ZL,low(2*map_vals) ; Load low part of byte address into ZL
+                                 		add ZL, r16	;add index
+                                 		ldi r16, 0
+                                 		adc ZH, r16 ;propagate carry
+                                 		lpm	;load value from address ZH:ZL in r0
+                                 .endmacro
+                                 
+                                 .macro init_regs ;clear registers
+                                 	clr MS_DIFH
+                                 	clr LAST_MSH
+                                 	clr MS_DIFL
+                                 	clr LAST_MSL
+                                 .endmacro
                                   #endif
                                  .include "timing.inc"
                                  
@@ -1527,200 +1556,601 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                   #ifndef _TIMING_INC_
                                   #define _TIMING_INC_
                                   
-                                  .def MSL = r20
-                                  .def MSH = r21
+                                  .def MSL = r20 ;milliseconds low byte
+                                  .def MSH = r21 ;milliseconds high byte
                                   
-                                  .macro init_timer ; init timer, interupts occur each 0.5 ms
-                                    /* cb_to_reg_h TCCR1B,(1 << WGM12)|(1<<CS11)|(1<<CS10); timer clock = system clock/64
-                                     cb_to_reg_h OCR1AH, 0x00
-                                     cb_to_reg_h OCR1AL, 0xff*/
-                                 
-                                 
-                                 	cb_to_reg_h TCCR1B,(1 << WGM12)|(1<<CS11); timer clock = system clock/8
-                                 	cb_to_reg_h OCR1AH, 0x0f ;set match value to 499
-                                 	cb_to_reg_h OCR1AL, 0xf3
-                                 
-                                 	cb_to_reg_h TIMSK1, 1<<OCIE1A
+                                  .macro init_timer ; init timer, interupts occur each 1 ms
+                                 	clr MSL ;clear registers
+                                 	clr MSH
+                                  	cb_to_reg_h OCR1AH, 0x1A;0x7A	;set compare values
+                                     cb_to_reg_h OCR1AL, 0x10;0x10
+                                 	cb_to_reg_h TIMSK1, 1<<OCIE1A	;enable match interrupt
+                                     cb_to_reg_h TCCR1B,(1 << WGM12)|(1 << CS10); timer clock = system clock; start clock
                                   .endmacro
                                  
                                   #endif
+                                 .include "tests.inc"
+                                 
+                                  * tests.inc
+                                  *
+                                  *  Created: 09-Feb-17 10:45:13 AM
+                                  *   Author: virgil
+                                  */ 
+                                  #ifndef _TESTS_INC_
+                                  #define _TESTS_INC_
+                                 
+                                  .include "encoders.inc"
+                                 
+                                  * encoders.inc
+                                  *
+                                  *  Created: 12/10/2016 6:41:16 PM
+                                  *   Author: virgil
+                                  */
+                                 
+                                  
+                                 
+                                  #ifndef _ENCODERS_INC_
+                                  #endif
+                                  .include "feedback.inc"
+                                 
+                                  * feedback.inc
+                                  *
+                                  *  Created: 09-Feb-17 9:11:52 PM
+                                  *   Author: virgil
+                                  */ 
+                                 
+                                  #ifndef _FEEDBACK_INC_
+                                  #define _FEEDBACK_INC_
+                                  
+                                  .include "misc.inc"
+                                 
+                                  * misc.inc
+                                  *
+                                  *  Created: 12/13/2016 10:51:57 PM
+                                  *   Author: virgil
+                                  */ 
+                                  #ifndef _MISC_INC_
+                                  #endif
+                                  .include "encoders.inc"
+                                 
+                                  * encoders.inc
+                                  *
+                                  *  Created: 12/10/2016 6:41:16 PM
+                                  *   Author: virgil
+                                  */
+                                 
+                                  
+                                 
+                                  #ifndef _ENCODERS_INC_
+                                  #endif
+                                  .include "motors.inc"
+                                 
+                                  * motors.inc
+                                  *
+                                  *  Created: 12/6/2016 9:41:10 PM
+                                  *   Author: virgil
+                                  */
+                                  #ifndef _MOTORS_INC_
+                                  #endif
+                                 
+                                 .def MAP_RES=r0
+                                 .def MS_DIFL=r18
+                                 .def MS_DIFH=r19
+                                 .def LAST_MS1L=r5
+                                 .def LAST_MS1H=r6
+                                 .def LAST_MS2L=r7
+                                 .def LAST_MS2H=r8
+                                 
+                                 .macro init_vars ;clear registers
+                                 	clr MS_DIFH
+                                 	clr MS_DIFL
+                                 	clr LAST_MS1H
+                                 	clr LAST_MS1L
+                                 	clr LAST_MS2H
+                                 	clr LAST_MS2L
+                                 .endmacro
+                                 
+                                  .macro feedback ;arg0 1 or 2. computes the speed and adjusts the pwm signal
+                                 		read_encoder @0		;read the encoders state. this is needed just to detect edges
+                                 		compute_des_speed	;get the desired speed. the value is stored in DS
+                                 		sbrc ENC_EDGE, @0	;check if there was an edge
+                                 			rjmp edg@0		;if there was jump to the apropriate label
+                                 		rjmp nedg@0			;if not jump elsewhere
+                                 		edg@0:;edge on encoder. compute interval on 16 bits from last edge
+                                 			mov MS_DIFL, MSL ;interval = now
+                                 			mov MS_DIFH, MSH ;
+                                 			.if @0 == 1
+                                 				sub MS_DIFL, LAST_MS1L;interval -= last
+                                 				sbc MS_DIFH, LAST_MS1H
+                                 				add LAST_MS1L, MS_DIFL ;last += interval
+                                 				adc LAST_MS1H, MS_DIFH ;in last is stored now
+                                 			.else
+                                 				sub MS_DIFL, LAST_MS2L;same thing as above
+                                 				sbc MS_DIFH, LAST_MS2H;the "last" variable differs
+                                 				add LAST_MS2L, MS_DIFL ;last += dif
+                                 				adc LAST_MS2H, MS_DIFH
+                                 			.endif
+                                 			; at this point the time interval between the edges is in MS_DIFH:MS_DIFL
+                                 		nedg@0:;***end edge on encoder***
+                                 	
+                                 	 	read_map MS_DIFL;map time interval to pwm values. result in MAP_RES
+                                 		
+                                 		cp DS, MAP_RES 
+                                 		breq all_fine@0 ;if values are equal all is fine
+                                 		cp DS, MAP_RES
+                                 		brlo ds_lower@0 ;if real speed < desired speed: motorspeed = desired_speed + desired_speed - real speed
+                                 			set_led
+                                 			mov r16, DS
+                                 			sub r16, MAP_RES
+                                 			add DS, r16
+                                 			;constrain DS. if overflow DS gets the maximum value
+                                 			brvs ovrflow@0
+                                 			rjmp no_ovrflow@0
+                                 			ovrflow@0:
+                                 				ldi DS, 0xff
+                                 			no_ovrflow@0:
+                                 		rjmp all_fine@0
+                                 		ds_lower@0:
+                                 			//slow down
+                                 		all_fine@0:
+                                 	
+                                 		.if @0 == 1 ;set the motors values
+                                 			mov VL, DS
+                                 			mov SL, DSS
+                                 		.else
+                                 			mov VR, DS
+                                 			mov SR, DSS
+                                 		.endif
+                                 
+                                 	.endmacro
+                                  
+                                  #endif
+                                 
+                                 		/*
+                                 		cpi MS_DIFL, low(5)
+                                 		ldi r16, high(5)
+                                 		cpc MS_DIFH, r16
+                                 		breq all_fine@0
+                                 
+                                 		cpi MS_DIFL, low(5)
+                                 		ldi r16, high(5)
+                                 		cpc MS_DIFH, r16
+                                 		brlo ds_lower@0
+                                 		.if @0 == 1;lower speed
+                                 			inc VL
+                                 		.else
+                                 			inc VR
+                                 		.endif
+                                 			set_led
+                                 		rjmp all_fine@0
+                                 		ds_lower@0:;higher speed
+                                 		.if @0 == 1
+                                 			dec VL
+                                 		.else
+                                 			dec VR
+                                 		.endif
+                                 		all_fine@0:
+                                  .include "motors.inc"
+                                 
+                                  * motors.inc
+                                  *
+                                  *  Created: 12/6/2016 9:41:10 PM
+                                  *   Author: virgil
+                                  */
+                                  #ifndef _MOTORS_INC_
+                                  #endif
+                                 
+                                  ;this simple test displays the value of an ecoder on the led
+                                  .macro test_encoders
+                                 	read_encoder @0
+                                 	sbrc ENC_VALS, @0
+                                 		set_led
+                                 	sbrs ENC_VALS, @0
+                                 		clear_led
+                                  .endmacro
+                                  
+                                 
+                                  .macro test_motors
+                                 	compute_des_speed
+                                 	.if @0 == 1
+                                 		mov VL, DS
+                                 		mov SL, DSS
+                                 		call go_left
+                                 	.else
+                                 		mov VR, DS
+                                 		mov SR, DSS
+                                 		call go_right
+                                 	.endif
+                                  .endmacro
+                                 
+                                  .macro test_lookup
+                                  		ldi MS_DIFL, 1
+                                 		read_map MS_DIFL
+                                 		sbrc r0, 0
+                                 			rjmp tuna
+                                 			rjmp tdoua
+                                 			tuna:
+                                 				set_led
+                                 			tdoua:
+                                  .endmacro
+                                 
+                                  .macro test_interval ;motor, check value
+                                 		read_encoder @0 ;5.2.2.1)
+                                 		compute_des_speed ;5.2.1) get the desired speed. the value is stored in DS
+                                 		sbrc ENC_EDGE, @0
+                                 			rjmp edg@0
+                                 		rjmp nedg@0
+                                 		edg@0:;***edge on encoder 2***
+                                 		 ;dif = now
+                                 			mov MS_DIFL, MSL
+                                 			mov MS_DIFH, MSH
+                                 		 ;dif -= last
+                                 			sub MS_DIFL, LAST_MSL
+                                 			sbc MS_DIFH, LAST_MSH
+                                 		 ;last += dif
+                                 			add LAST_MSL, MS_DIFL
+                                 			adc LAST_MSH, MS_DIFH
+                                 		; at this point the time interval between the edges is in MS_DIFH:MS_DIFL 5.2.2.3
+                                 		;apply constrain(). i.e. if MS_DIFH > 0 then MS_DIFL = 255 TODO
+                                 	//!	cpi MS_DIFH, 0
+                                 	//!	breq nedg1
+                                 	//!		ldi MS_DIFL, 0xff
+                                 		nedg@0:;***end edge on encoder 2***
+                                 
+                                 		cpi MS_DIFL, @1
+                                 		brlo ndnd@0
+                                 			clear_led
+                                 			rjmp dndn@0
+                                 		ndnd@0:
+                                 			set_led
+                                 		dndn@0:
+                                 
+                                  .endmacro
+                                  
+                                 
+                                  #endif
+                                 .include "feedback.inc"
+                                 
+                                  * feedback.inc
+                                  *
+                                  *  Created: 09-Feb-17 9:11:52 PM
+                                  *   Author: virgil
+                                  */ 
+                                 
+                                  #ifndef _FEEDBACK_INC_
+                                  #endif
+                                 
+                                 		/*
+                                 		cpi MS_DIFL, low(5)
+                                 		ldi r16, high(5)
+                                 		cpc MS_DIFH, r16
+                                 		breq all_fine@0
+                                 
+                                 		cpi MS_DIFL, low(5)
+                                 		ldi r16, high(5)
+                                 		cpc MS_DIFH, r16
+                                 		brlo ds_lower@0
+                                 		.if @0 == 1;lower speed
+                                 			inc VL
+                                 		.else
+                                 			inc VR
+                                 		.endif
+                                 			set_led
+                                 		rjmp all_fine@0
+                                 		ds_lower@0:;higher speed
+                                 		.if @0 == 1
+                                 			dec VL
+                                 		.else
+                                 			dec VR
+                                 		.endif
+                                 		all_fine@0:
                                  ;======defines=========
                                  .org 0x0000
-000000 c016                      rjmp start ; reset ISR
+000000 c04a                      rjmp start ; reset ISR
                                  .org 0x0016 ;Timer/Counter1 Capture Event
-000016 c0bd                      rjmp tim1_compa
+000016 c14e                      rjmp tim1_compa
                                  
+                                 map_vals:; map_vals[ms] == pwm
+000017 ffff
+000018 ffff
+000019 ffff
+00001a ffff
+00001b ffff
+00001c ffff
+00001d fdff
+00001e f7fa
+00001f f1f4
+000020 ecee
+000021 e6e9
+000022 e0e3
+000023 dbdd
+000024 d5d8
+000025 cfd2
+000026 cacc
+000027 c4c7
+000028 bec1
+000029 b9bb
+00002a b3b6
+00002b adb0
+00002c a8aa
+00002d a2a5
+00002e 9c9f
+00002f 9799
+000030 9194
+000031 8b8e
+000032 8688
+000033 8083
+000034 7a7d
+000035 7577
+000036 6f72
+000037 696c
+000038 6466
+000039 5e61
+00003a 585b
+00003b 5355
+00003c 4d50
+00003d 474a
+00003e 4244
+00003f 3c3f
+000040 3639
+000041 3133
+000042 2b2e
+000043 2528
+000044 2022
+000045 1a1d
+000046 1417
+000047 0f11
+000048 090c
+000049 0306
+00004a 0000                          .db 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 253, 250, 247, 244, 241, 238, 236, 233, 230, 227, 224, 221, 219, 216, 213, 210, 207, 204, 202, 199, 196, 193, 190, 187, 185, 182, 179, 176, 173, 170, 168, 165, 162, 159, 156, 153, 15                                 1, 148, 145, 142, 139, 136, 134, 131, 128, 125, 122, 119, 117, 114, 111, 108, 105, 102, 100, 97, 94, 91, 88, 85, 83, 80, 77, 74, 71, 68, 66, 63, 60, 57, 54, 51, 49, 46, 43, 40, 37, 34, 32, 29, 26, 23, 20, 17, 15, 12, 9, 6, 3, 0, 0
+                                 .cseg
                                  start:
-                                     ;-----setup-------- 5.1)
-000017 ea09
-000018 bd04
-000019 e002
-00001a bd05
-00001b ea09
-00001c 9300 00b0
-00001e e002
-00001f 9300 00b1                 	init_motors
-000021 ef0f
-000022 bf0d
-000023 e008
-000024 bf0e                      	init_stack
-000025 e600
-000026 9300 007c
-000028 e806
-000029 9300 007a                 	init_adc
-00002b 9a52                      	init_led
-00002c 2788
-00002d 2777                      	init_encoders
-00002e e00a
-00002f 9300 0081
-000031 e00f
-000032 9300 0089
-000034 ef03
-000035 9300 0088
-000037 e002
-000038 9300 006f                 	init_timer
-                                 ;	sei
+00004b 2733
+00004c 2722
+00004d 2466
+00004e 2455
+00004f 2488
+000050 2477                      	init_vars
+000051 27aa
+000052 27bb
+000053 27cc
+000054 27dd
+000055 ea09
+000056 bd04
+000057 e002
+000058 bd05
+000059 ea09
+00005a 9300 00b0
+00005c e002
+00005d 9300 00b1                 	init_motors
+00005f ef0f
+000060 bf0d
+000061 e008
+000062 bf0e                      	init_stack
+000063 e600
+000064 9300 007c
+000066 e806
+000067 9300 007a                 	init_adc
+000069 9a52                      	init_led
+00006a 2788
+00006b 2777                      	init_encoders
+00006c 2744
+00006d 2755
+00006e e10a
+00006f 9300 0089
+000071 e100
+000072 9300 0088
+000074 e002
+000075 9300 006f
+000077 e009
+000078 9300 0081                 	init_timer
+00007a 9478                      	sei
                                  	;------------------
-00003a e0a0                      	ldi SL, 0
-00003b efbf                      	ldi VL, 255
-00003c e0c0                      	ldi SR, 0
-00003d efdf                      	ldi VR, 255
                                  
                                  	run: ;5.2)
-00003e e600
-00003f 9300 007c
-000041 e806
-000042 9300 007a
-000044 9100 007c
-000046 6001
-000047 9300 007c
-000049 9100 007c
-00004b 7f0d
-00004c 9300 007c
-00004e 9100 007a
-000050 6400
-000051 9300 007a
-000053 e010
-000054 9100 007a
-000056 7400
-000057 1701
-000058 f7d9
-000059 9190 0079
-00005b e406
-00005c 1709
-00005d f028
-00005e ff81
-00005f c003
-000060 7f8d
-000061 6072
-000062 c00a
-000063 7f7d
-000064 e708
-000065 1790
-000066 f028
-000067 fd81
-000068 c003
-000069 6082
-00006a 6072
-00006b c001
-00006c 7f7d                      		read_encoder 1
-00006d e600
-00006e 9300 007c
-000070 e806
-000071 9300 007a
-000073 9100 007c
-000075 7f0e
-000076 9300 007c
-000078 9100 007c
-00007a 6002
-00007b 9300 007c
-00007d 9100 007a
-00007f 6400
+00007b 985a                      		clear_led
+00007c e600
+00007d 9300 007c
+00007f e806
 000080 9300 007a
-000082 e010
-000083 9100 007a
-000085 7400
-000086 1701
-000087 f7d9
-000088 9190 0079
-00008a e406
-00008b 1709
-00008c f028
-00008d ff82
-00008e c003
-00008f 7f8b
-000090 6074
-000091 c00a
-000092 7f7b
-000093 e708
-000094 1790
-000095 f028
-000096 fd82
-000097 c003
-000098 6084
-000099 6074
-00009a c001
-00009b 7f7b                      		read_encoder 2
-00009c e600
-00009d 9300 007c
-00009f e806
-0000a0 9300 007a
-0000a2 9100 007c
-0000a4 7f0e
-0000a5 9300 007c
-0000a7 9100 007c
-0000a9 7f0d
-0000aa 9300 007c
-0000ac 9100 007a
-0000ae 6400
-0000af 9300 007a
-0000b1 e010
-0000b2 9100 007a
-0000b4 7400
-0000b5 1701
-0000b6 f7d9
-0000b7 9190 0079
-0000b9 e70f
-0000ba 1709
-0000bb f418
-0000bc e061
-0000bd 1b90
-0000be c005
-0000bf e060
-0000c0 1b90
-0000c1 9503
-0000c2 1b09
-0000c3 2f90
-0000c4 0f99                      		compute_des_speed ;5.2.1) get the desired speed. the value is stored in DS
-0000c5 fd81                      		sbrc ENC_VALS, 1
-0000c6 c001                      			rjmp edg1
-0000c7 c001                      		rjmp nedg1
-                                 		edg1:;***edge on encoder 2***
-0000c8 9a5a                      			set_led
-                                 		nedg1:;***end edge on encoder 2***
-                                 		
-0000c9 ff81                      		sbrs ENC_VALS, 1
-0000ca c001                      			rjmp edg2
-0000cb c001                      		rjmp nedg2
-                                 		edg2:;***edge on encoder 2***
-0000cc 985a                      			clear_led
-                                 		nedg2:;***end edge on encoder 2***
-0000cd 2fb9                      		mov VL, DS
-0000ce 2fd9                      		mov VR, DS
-0000cf 940e 00e3
-0000d1 940e 00f0                         go ;5.2.5) apply the values in SL, VL, SR and VR to the motors
-                                 		
-                                 	
-0000d3 cf6a                      	rjmp run
+000082 9100 007c
+000084 6001
+000085 9300 007c
+000087 9100 007c
+000089 7f0d
+00008a 9300 007c
+00008c 9100 007a
+00008e 6400
+00008f 9300 007a
+000091 9100 007a
+000093 7400
+000094 3000
+000095 f7d9
+000096 9190 0079
+000098 3406
+000099 f028
+00009a ff81
+00009b c003
+00009c 7f8d
+00009d 6072
+00009e c009
+00009f 7f7d
+0000a0 3798
+0000a1 f028
+0000a2 fd81
+0000a3 c003
+0000a4 6082
+0000a5 6072
+0000a6 c001
+0000a7 7f7d
+0000a8 e600
+0000a9 9300 007c
+0000ab e806
+0000ac 9300 007a
+0000ae 9100 007c
+0000b0 7f0e
+0000b1 9300 007c
+0000b3 9100 007c
+0000b5 7f0d
+0000b6 9300 007c
+0000b8 9100 007a
+0000ba 6400
+0000bb 9300 007a
+0000bd 9100 007a
+0000bf 7400
+0000c0 3000
+0000c1 f7d9
+0000c2 9190 0079
+0000c4 e70f
+0000c5 1709
+0000c6 f418
+0000c7 e061
+0000c8 1b90
+0000c9 c005
+0000ca e060
+0000cb 1b90
+0000cc 9503
+0000cd 1b09
+0000ce 2f90
+0000cf 0f99
+0000d0 fd71
+0000d1 c001
+0000d2 c006
+0000d3 2f24
+0000d4 2f35
+0000d5 1925
+0000d6 0936
+0000d7 0e52
+0000d8 1e63
+0000d9 2f02
+0000da e0f0
+0000db e2ee
+0000dc 0fe0
+0000dd e000
+0000de 1ff0
+0000df 95c8
+0000e0 1590
+0000e1 f051
+0000e2 1590
+0000e3 f040
+0000e4 9a5a
+0000e5 2f09
+0000e6 1900
+0000e7 0f90
+0000e8 f00b
+0000e9 c001
+0000ea ef9f
+0000eb c000
+0000ec 2fb9
+0000ed 2fa6                      		feedback 1
+0000ee e600
+0000ef 9300 007c
+0000f1 e806
+0000f2 9300 007a
+0000f4 9100 007c
+0000f6 7f0e
+0000f7 9300 007c
+0000f9 9100 007c
+0000fb 6002
+0000fc 9300 007c
+0000fe 9100 007a
+000100 6400
+000101 9300 007a
+000103 9100 007a
+000105 7400
+000106 3000
+000107 f7d9
+000108 9190 0079
+00010a 3406
+00010b f028
+00010c ff82
+00010d c003
+00010e 7f8b
+00010f 6074
+000110 c009
+000111 7f7b
+000112 3798
+000113 f028
+000114 fd82
+000115 c003
+000116 6084
+000117 6074
+000118 c001
+000119 7f7b
+00011a e600
+00011b 9300 007c
+00011d e806
+00011e 9300 007a
+000120 9100 007c
+000122 7f0e
+000123 9300 007c
+000125 9100 007c
+000127 7f0d
+000128 9300 007c
+00012a 9100 007a
+00012c 6400
+00012d 9300 007a
+00012f 9100 007a
+000131 7400
+000132 3000
+000133 f7d9
+000134 9190 0079
+000136 e70f
+000137 1709
+000138 f418
+000139 e061
+00013a 1b90
+00013b c005
+00013c e060
+00013d 1b90
+00013e 9503
+00013f 1b09
+000140 2f90
+000141 0f99
+000142 fd72
+000143 c001
+000144 c006
+000145 2f24
+000146 2f35
+000147 1927
+000148 0938
+000149 0e72
+00014a 1e83
+00014b 2f02
+00014c e0f0
+00014d e2ee
+00014e 0fe0
+00014f e000
+000150 1ff0
+000151 95c8
+000152 1590
+000153 f051
+000154 1590
+000155 f040
+000156 9a5a
+000157 2f09
+000158 1900
+000159 0f90
+00015a f00b
+00015b c001
+00015c ef9f
+00015d c000
+00015e 2fd9
+00015f 2fc6                      		feedback 2
+000160 940e 0174
+000162 940e 0180                 		go;5.2.5) apply the values in SL, VL, SR and VR to the motors*/
+000164 cf16                      	rjmp run
+                                 
                                  ;timing interrupt
                                  tim1_compa:
-0000d4 9543                      	 inc MSL
-0000d5 f00b                      	 brvs ovrfl
-0000d6 c001                      	 rjmp no_ovrfl
-                                 	 ovrfl: 
-0000d7 9553                      		inc MSH
+000165 9543                      	 inc MSL ;increase low byte
+000166 f00b                      	 brvs ovrfl
+000167 c001                      	 rjmp no_ovrfl
+                                 	 ovrfl:;if overflow increase high byte
+000168 9553                      		inc MSH
                                  	 no_ovrfl:
-0000d8 9518                      	reti
+000169 9518                      	reti
+                                 
                                  ;====include methods===
                                  .include "utils.asm"
                                  
@@ -1734,16 +2164,16 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                   #define _UTILS_ASM_
                                  
                                  delay_ms: ;should be 1ms (clock @ 16MHz)
-0000d9 e031                      	ldi  r19, 1
-0000da e02c                          ldi  r18, 12
-0000db e840                          ldi  r20, 128
-0000dc 954a                      L1: dec  r20
-0000dd f7f1                          brne L1
-0000de 953a                          dec  r19
-0000df f7e1                          brne L1
-0000e0 952a                          dec  r18
-0000e1 f7d1                          brne L1
-0000e2 9508                      ret
+00016a e031                      	ldi  r19, 1
+00016b e02c                          ldi  r18, 12
+00016c e840                          ldi  r20, 128
+00016d 954a                      L1: dec  r20
+00016e f7f1                          brne L1
+00016f 953a                          dec  r19
+000170 f7e1                          brne L1
+000171 952a                          dec  r18
+000172 f7d1                          brne L1
+000173 9508                      ret
                                  
                                   #endif
                                  
@@ -1770,34 +2200,32 @@ C:\Users\virgi\Documents\Atmel Studio\7.0\DumbCar\DumbCar\main.asm(77): Includin
                                   #define _MOTORS_ASM_
                                  
                                   go_left:
-0000e3 e000                      	ldi r16, 0
-0000e4 17a0                      	cp SL, r16
-0000e5 f029                      	breq else1 ;if SL != 1 (forward)
-0000e6 9853                      			disable_channel_2B
-0000e7 9a23                      			enable_channel_2A
-0000e8 93b0 00b3                 			set_match_2A VL
-0000ea c004                      	rjmp end1
+000174 30a0                      	cpi SL, 0
+000175 f029                      	breq else1 ;if SL != 1 (forward)
+000176 9853                      			disable_channel_2B
+000177 9a23                      			enable_channel_2A
+000178 93b0 00b3                 			set_match_2A VL
+00017a c004                      	rjmp end1
                                  	else1: ; else if SL == 1 (backwards)
-0000eb 9823                      		disable_channel_2A
-0000ec 9a53                      		enable_channel_2B
-0000ed 93b0 00b4                 		set_match_2B VL
+00017b 9823                      		disable_channel_2A
+00017c 9a53                      		enable_channel_2B
+00017d 93b0 00b4                 		set_match_2B VL
                                  	end1:
-0000ef 9508                      ret
+00017f 9508                      ret
                                  
                                   go_right:
-0000f0 e000                      	ldi r16, 0
-0000f1 17c0                      	cp SR, r16
-0000f2 f021                      	breq else2 ;if SR != 1 (forward)
-0000f3 9855                      			disable_channel_0B
-0000f4 9a56                      			enable_channel_0A
-0000f5 bdd7                      			set_match_0A VR
-0000f6 c003                      	rjmp end2
+000180 30c0                      	cpi SR, 0
+000181 f021                      	breq else2 ;if SR != 1 (forward)
+000182 9855                      			disable_channel_0B
+000183 9a56                      			enable_channel_0A
+000184 bdd7                      			set_match_0A VR
+000185 c003                      	rjmp end2
                                  	else2: ; else if SR == 1 (backwards)
-0000f7 9856                      		disable_channel_0A
-0000f8 9a55                      		enable_channel_0B
-0000f9 bdd8                      		set_match_0B VR
+000186 9856                      		disable_channel_0A
+000187 9a55                      		enable_channel_0B
+000188 bdd8                      		set_match_0B VR
                                  	end2:
-0000fa 9508                      ret
+000189 9508                      ret
                                  
                                   #endif
                                  .include "encoders.asm"
@@ -1850,39 +2278,39 @@ counted separately from r26..r31 here.
 .dseg memory usage only counts static data declared with .byte
 
 "ATmega328P" register use summary:
-x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
-r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16:  91 r17:   6 r18:   2 r19:   2 r20:   3 
-r21:   1 r22:   2 r23:   9 r24:  11 r25:  15 r26:   2 r27:   4 r28:   2 
-r29:   4 r30:   0 r31:   0 
-Registers used: 14 out of 35 (40.0%)
+x  :   0 y  :   0 z  :   0 r0 :   6 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
+r5 :   3 r6 :   3 r7 :   3 r8 :   3 r9 :   0 r10:   0 r11:   0 r12:   0 
+r13:   0 r14:   0 r15:   0 r16: 118 r17:   0 r18:  11 r19:   9 r20:   6 
+r21:   4 r22:   6 r23:  11 r24:   9 r25:  30 r26:   3 r27:   4 r28:   3 
+r29:   4 r30:   4 r31:   4 
+Registers used: 20 out of 35 (57.1%)
 
 "ATmega328P" instruction use summary:
-.lds  :   0 .sts  :   0 adc   :   0 add   :   0 adiw  :   0 and   :   0 
-andi  :  13 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   0 brcs  :   0 break :   0 breq  :   2 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   4 brlt  :   0 brmi  :   0 
-brne  :   6 brpl  :   0 brsh  :   1 brtc  :   0 brts  :   0 brvc  :   0 
-brvs  :   1 bset  :   0 bst   :   0 call  :   2 cbi   :   5 cbr   :   0 
-clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   2 cls   :   0 
-clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :  10 cpc   :   0 
-cpi   :   0 cpse  :   0 dec   :   3 eor   :   0 fmul  :   0 fmuls :   0 
-fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   3 jmp   :   0 
-ld    :   0 ldd   :   0 ldi   :  37 lds   :  15 lpm   :   0 lsl   :   1 
-lsr   :   0 mov   :   3 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   0 or    :   0 ori   :  11 out   :   6 pop   :   0 
-push  :   0 rcall :   0 ret   :   3 reti  :   1 rjmp  :  19 rol   :   0 
-ror   :   0 sbc   :   0 sbci  :   0 sbi   :   6 sbic  :   0 sbis  :   0 
-sbiw  :   0 sbr   :   0 sbrc  :   3 sbrs  :   3 sec   :   0 seh   :   0 
-sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
-sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :  25 
-sub   :   3 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 26 out of 113 (23.0%)
+.lds  :   0 .sts  :   0 adc   :   4 add   :   6 adiw  :   0 and   :   0 
+andi  :  16 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
+brcc  :   0 brcs  :   0 break :   0 breq  :   4 brge  :   0 brhc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   6 brlt  :   0 brmi  :   0 
+brne  :   7 brpl  :   0 brsh  :   2 brtc  :   0 brts  :   0 brvc  :   0 
+brvs  :   3 bset  :   0 bst   :   0 call  :   2 cbi   :   5 cbr   :   0 
+clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :  14 cls   :   0 
+clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   6 cpc   :   0 
+cpi   :  10 cpse  :   0 dec   :   3 eor   :   0 fmul  :   0 fmuls :   0 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   4 jmp   :   0 
+ld    :   0 ldd   :   0 ldi   :  37 lds   :  20 lpm   :   6 lsl   :   2 
+lsr   :   0 mov   :  14 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :   0 or    :   0 ori   :  12 out   :   6 pop   :   0 
+push  :   0 rcall :   0 ret   :   3 reti  :   1 rjmp  :  24 rol   :   0 
+ror   :   0 sbc   :   2 sbci  :   0 sbi   :   7 sbic  :   0 sbis  :   0 
+sbiw  :   0 sbr   :   0 sbrc  :   4 sbrs  :   2 sec   :   0 seh   :   0 
+sei   :   1 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
+sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :  30 
+sub   :  10 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
+Instructions used: 32 out of 113 (28.3%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x0001f6    460      0    460   32768   1.4%
+[.cseg] 0x000000 0x000314    642    104    746   32768   2.3%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 

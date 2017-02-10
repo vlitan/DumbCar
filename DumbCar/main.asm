@@ -15,14 +15,20 @@
 .include "analog_input.inc"
 .include "misc.inc"
 .include "timing.inc"
+.include "tests.inc"
+.include "feedback.inc"
 ;======defines=========
 .org 0x0000
 rjmp start ; reset ISR
 .org 0x0016 ;Timer/Counter1 Capture Event
 rjmp tim1_compa
 
+map_vals:; map_vals[ms] == pwm
+    .db 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 253, 250, 247, 244, 241, 238, 236, 233, 230, 227, 224, 221, 219, 216, 213, 210, 207, 204, 202, 199, 196, 193, 190, 187, 185, 182, 179, 176, 173, 170, 168, 165, 162, 159, 156, 153, 151, 148, 145, 142, 139, 136, 134, 131, 128, 125, 122, 119, 117, 114, 111, 108, 105, 102, 100, 97, 94, 91, 88, 85, 83, 80, 77, 74, 71, 68, 66, 63, 60, 57, 54, 51, 49, 46, 43, 40, 37, 34, 32, 29, 26, 23, 20, 17, 15, 12, 9, 6, 3, 0, 0
+.cseg
 start:
     ;-----setup-------- 5.1)
+	init_vars
 	init_motors
 	init_stack
 	init_adc
@@ -31,43 +37,24 @@ start:
 	init_timer
 	sei
 	;------------------
-	ldi SL, 0
-	ldi VL, 255
-	ldi SR, 0
-	ldi VR, 255
 
 	run: ;5.2)
-		read_encoder 1
-		read_encoder 2
-		compute_des_speed ;5.2.1) get the desired speed. the value is stored in DS
-		sbrc ENC_EDGE, 1
-			rjmp edg1
-		rjmp nedg1
-		edg1:;***edge on encoder 2***
-
-		nedg1:;***end edge on encoder 2***
-		
-		sbrs ENC_EDGE, 2
-			rjmp edg2
-		rjmp nedg2
-		edg2:;***edge on encoder 2***
-	
-		nedg2:;***end edge on encoder 2***
-		mov VL, DS
-		mov VR, DS
-        go ;5.2.5) apply the values in SL, VL, SR and VR to the motors
-		
-	
+		clear_led
+		feedback 1
+		feedback 2
+		go;5.2.5) apply the values in SL, VL, SR and VR to the motors*/
 	rjmp run
+
 ;timing interrupt
 tim1_compa:
-	 inc MSL
+	 inc MSL ;increase low byte
 	 brvs ovrfl
 	 rjmp no_ovrfl
-	 ovrfl: 
+	 ovrfl:;if overflow increase high byte
 		inc MSH
 	 no_ovrfl:
 	reti
+
 ;====include methods===
 .include "utils.asm"
 .include "pwm.asm"
